@@ -24,7 +24,6 @@ This repository is 🔋 battery packed with:
 - 👀 Default Open Graph — Awesome open graph generated using [og.thcl.dev](https://github.com/theodorusclarence/og), fork it and deploy!
 - 🗺 Site Map — Automatically generate sitemap.xml
 
-
 ## Getting Started
 
 ### 1. Clone this repository:
