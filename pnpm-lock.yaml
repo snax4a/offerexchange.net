@@ -8,12 +8,13 @@ specifiers:
   '@tailwindcss/forms': 0.5.2
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.3.0
+  '@types/body-scroll-lock': ^3.1.0
   '@types/jest': 28.1.1
   '@types/react': 18.0.12
-  '@types/tailwindcss': 3.0.10
   '@typescript-eslint/eslint-plugin': 5.27.1
   '@typescript-eslint/parser': 5.27.1
   autoprefixer: 10.4.7
+  body-scroll-lock: 4.0.0-beta.0
   clsx: 1.1.1
   eslint: 8.17.0
   eslint-config-next: 12.1.6
@@ -27,6 +28,8 @@ specifiers:
   next: 12.1.6
   next-sitemap: 3.0.5
   postcss: 8.4.14
+  postcss-100vh-fix: ^1.0.2
+  postcss-flexbugs-fixes: ^5.0.2
   prettier: 2.6.2
   prettier-plugin-tailwindcss: 0.1.11
   react: 18.1.0
@@ -38,6 +41,7 @@ specifiers:
   typescript: 4.7.3
 
 dependencies:
+  body-scroll-lock: 4.0.0-beta.0
   clsx: 1.1.1
   next: 12.1.6_ef5jwxihqo6n7gxfmzogljlgcm
   react: 18.1.0
@@ -53,9 +57,9 @@ devDependencies:
   '@tailwindcss/forms': 0.5.2_tailwindcss@3.1.2
   '@testing-library/jest-dom': 5.16.4
   '@testing-library/react': 13.3.0_ef5jwxihqo6n7gxfmzogljlgcm
+  '@types/body-scroll-lock': 3.1.0
   '@types/jest': 28.1.1
   '@types/react': 18.0.12
-  '@types/tailwindcss': 3.0.10
   '@typescript-eslint/eslint-plugin': 5.27.1_aq7uryhocdbvbqum33pitcm3y4
   '@typescript-eslint/parser': 5.27.1_ud6rd4xtew5bv4yhvkvu24pzm4
   autoprefixer: 10.4.7_postcss@8.4.14
@@ -70,6 +74,8 @@ devDependencies:
   lint-staged: 13.0.1
   next-sitemap: 3.0.5_nlwwphh5s5ggdfer3ji4ymvzrq
   postcss: 8.4.14
+  postcss-100vh-fix: 1.0.2_postcss@8.4.14
+  postcss-flexbugs-fixes: 5.0.2_postcss@8.4.14
   prettier: 2.6.2
   prettier-plugin-tailwindcss: 0.1.11_prettier@2.6.2
   standard-version: 9.5.0
@@ -2255,6 +2261,10 @@ packages:
       '@babel/types': 7.18.4
     dev: true
 
+  /@types/body-scroll-lock/3.1.0:
+    resolution: {integrity: sha512-3owAC4iJub5WPqRhxd8INarF2bWeQq1yQHBgYhN0XLBJMpd5ED10RrJ3aKiAwlTyL5wK7RkBD4SZUQz2AAAMdA==}
+    dev: true
+
   /@types/graceful-fs/4.1.5:
     resolution: {integrity: sha512-anKkLmZZ+xm4p8JWBf4hElkM4XR+EZeA2M9BAkkTldmcyDY4mbdIJnRghDJH3Ov5ooY7/UAoENtmdMSkaAd7Cw==}
     dependencies:
@@ -2348,10 +2358,6 @@ packages:
 
   /@types/stack-utils/2.0.1:
     resolution: {integrity: sha512-Hl219/BT5fLAaz6NDkSuhzasy49dwQS/DSdu4MdggFB8zcXv7vflBI3xp7FEmkmdDkBUI2bPUNeMttp2knYdxw==}
-    dev: true
-
-  /@types/tailwindcss/3.0.10:
-    resolution: {integrity: sha512-1UnZIHO0NOPyPlPFV0HuMjki2SHkvG9uBA1ZehWj/OQMSROk503nuNyyfmJSIT289yewxTbKoPG+KLxYRvfIIg==}
     dev: true
 
   /@types/testing-library__jest-dom/5.14.3:
@@ -2878,6 +2884,10 @@ packages:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
     engines: {node: '>=8'}
     dev: true
+
+  /body-scroll-lock/4.0.0-beta.0:
+    resolution: {integrity: sha512-a7tP5+0Mw3YlUJcGAKUqIBkYYGlYxk2fnCasq/FUph1hadxlTRjF+gAcZksxANnaMnALjxEddmSi/H3OR8ugcQ==}
+    dev: false
 
   /boolbase/1.0.0:
     resolution: {integrity: sha512-JZOSA7Mo9sNGB8+UjSgzdLtokWAky1zbztM3WRLCbZ70/3cTANmQmOdR7y2g+J0e2WXywy1yS468tY+IruqEww==}
@@ -6165,6 +6175,23 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: true
+
+  /postcss-100vh-fix/1.0.2_postcss@8.4.14:
+    resolution: {integrity: sha512-t7vqk9AfjI4fXmWlQCEiMZFFhi1hro4WlECINI1TV6Qh1XapUJE++gCmNr95F5Hen/+bz1OmO+SiSB9TZmFmSg==}
+    engines: {node: '>=10.0'}
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      postcss: 8.4.14
+    dev: true
+
+  /postcss-flexbugs-fixes/5.0.2_postcss@8.4.14:
+    resolution: {integrity: sha512-18f9voByak7bTktR2QgDveglpn9DTbBWPUzSOe9g0N4WR/2eSt6Vrcbf0hmspvMI6YWGywz6B9f7jzpFNJJgnQ==}
+    peerDependencies:
+      postcss: ^8.1.4
+    dependencies:
+      postcss: 8.4.14
     dev: true
 
   /postcss-import/14.1.0_postcss@8.4.14:

@@ -3,7 +3,9 @@
 @tailwind utilities;
 
 :root {
-  /* #region  /**=========== Primary Color =========== */
+  /* #region  /**=========== Colors =========== */
+  --color-primary: 17 20 45; /* #11142d */
+  --color-secondary: 108 93 211; /* #6C5DD3 */
   --tw-color-primary-50: 245 243 255;
   --tw-color-primary-100: 237 233 254;
   --tw-color-primary-200: 221 214 254;
@@ -24,7 +26,7 @@
   --color-primary-700: rgb(var(--tw-color-primary-700)); /* #6d28d9 */
   --color-primary-800: rgb(var(--tw-color-primary-800)); /* #5b21b6 */
   --color-primary-900: rgb(var(--tw-color-primary-900)); /* #4c1d95 */
-  /* #endregion  /**======== Primary Color =========== */
+  /* #endregion  /**======== Colors =========== */
 }
 
 @layer base {
@@ -38,10 +40,6 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
       U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
       U+2215, U+FEFF, U+FFFD;
-  }
-
-  .cursor-newtab {
-    cursor: url('/images/new-tab.png') 10 10, pointer;
   }
 
   /* #region  /**=========== Typography =========== */
@@ -75,7 +73,7 @@
   }
   /* #endregion  /**======== Typography =========== */
 
-  .layout {
+  .container {
     /* 1100px */
     max-width: 68.75rem;
     @apply mx-auto w-11/12;
@@ -96,8 +94,8 @@
     background-image: linear-gradient(#33333300, #33333300),
       linear-gradient(
         to right,
-        var(--color-primary-400),
-        var(--color-primary-500)
+        rgb(var(--color-secondary)),
+        rgb(var(--color-secondary))
       );
     background-size: 100% 2px, 0 2px;
     background-position: 100% 100%, 0 100%;

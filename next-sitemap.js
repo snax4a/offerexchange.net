@@ -1,9 +1,11 @@
+import { siteUrl } from '@/config/site';
+
 /**
  * @type {import('next-sitemap').IConfig}
  * @see https://github.com/iamvishnusankar/next-sitemap#readme
  */
 module.exports = {
-  siteUrl: 'https://offerexchange.net',
+  siteUrl,
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
