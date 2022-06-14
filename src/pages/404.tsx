@@ -12,7 +12,7 @@ export default function NotFoundPage() {
 
       <main>
         <section className='bg-white'>
-          <div className='layout flex self-stretch flex-col items-center justify-center text-center text-black'>
+          <div className='layout flex flex-col items-center justify-center self-stretch text-center text-black'>
             <RiAlarmWarningFill
               size={60}
               className='drop-shadow-glow animate-flicker text-red-500'

@@ -14,24 +14,24 @@ export default function Footer() {
   const socialLinkClasses = 'text-primary hover:text-blue-500 duration-200';
   return (
     <>
-      <div className='self-stretch w-full mt-auto'>
-        <div className='mx-auto w-full px-5 sm:px-12 md:px-12 pt-10 md:pt-12 lg:pt-10'>
+      <div className='mt-auto w-full self-stretch'>
+        <div className='mx-auto w-full px-5 pt-10 sm:px-12 md:px-12 md:pt-12 lg:pt-10'>
           <hr className='border-border dark:border-border-dark layout' />
         </div>
-        <footer className='text-primary py-12 px-5 sm:px-12 md:px-12 sm:py-12 md:py-16 lg:py-14'>
-          <div className='grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-8 layout'>
-            <div className='order-last justify-self-center sm:justify-self-start sm:order-first col-span-2 sm:col-span-1 flex flex-col'>
+        <footer className='py-12 px-5 text-primary sm:px-12 sm:py-12 md:px-12 md:py-16 lg:py-14'>
+          <div className='layout grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3 xl:grid-cols-4'>
+            <div className='order-last col-span-2 flex flex-col justify-self-center sm:order-first sm:col-span-1 sm:justify-self-start'>
               <UnstyledLink href='/'>
                 <div>
                   <Logo
-                    className='mt-4 w-44 xl:w-48 text-9xl'
+                    className='mt-4 w-44 text-9xl xl:w-48'
                     height='auto'
                     width='auto'
                   />
                 </div>
               </UnstyledLink>
               <UnstyledLink href='https://conetso.com'>
-                <div className='text-xs text-left mt-3 pr-0.5'>
+                <div className='mt-3 pr-0.5 text-left text-xs'>
                   {siteConfig.copyright}
                 </div>
               </UnstyledLink>
@@ -55,7 +55,7 @@ export default function Footer() {
               <FooterLink isHeader={true}>Kontakt</FooterLink>
               <FooterLink href='/support'>Pomoc techniczna</FooterLink>
               <FooterLink href='/contact-sales'>Dział sprzedaży</FooterLink>
-              <div className='flex flex-row mt-8 gap-x-2'>
+              <div className='mt-8 flex flex-row gap-x-2'>
                 <UnstyledLink
                   aria-label={`${siteConfig.siteName} on Facebook`}
                   href={siteConfig.faceBookUrl}

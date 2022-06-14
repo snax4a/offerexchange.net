@@ -8,9 +8,8 @@ type NextImageProps = {
   imgClassName?: string;
   blurClassName?: string;
   alt: string;
-  width: string | number;
 } & (
-  | { width: string | number; height: string | number }
+  | { width?: string | number; height?: string | number }
   | { layout: 'fill'; width?: string | number; height?: string | number }
 ) &
   ImageProps;
@@ -23,6 +22,7 @@ type NextImageProps = {
 export default function NextImage({
   useSkeleton = false,
   src,
+  layout = 'responsive',
   width,
   height,
   alt,
@@ -31,9 +31,7 @@ export default function NextImage({
   blurClassName,
   ...rest
 }: NextImageProps) {
-  const [status, setStatus] = React.useState(
-    useSkeleton ? 'loading' : 'complete'
-  );
+  const [status, setStatus] = React.useState(useSkeleton ? 'loading' : 'complete');
   const widthIsSet = className?.includes('w-') ?? false;
 
   return (
@@ -51,7 +49,7 @@ export default function NextImage({
         height={height}
         alt={alt}
         onLoadingComplete={() => setStatus('complete')}
-        layout='responsive'
+        layout={layout}
         {...rest}
       />
     </figure>
