@@ -14,17 +14,17 @@ export default function Footer() {
   const socialLinkClasses = 'text-primary hover:text-blue-500 duration-200';
   return (
     <>
-      <div className='self-stretch w-full sm:pl-0 lg:pl-80 sm:pr-0 2xl:pr-80 pl-0 pr-0 mt-auto'>
+      <div className='self-stretch w-full mt-auto'>
         <div className='mx-auto w-full px-5 sm:px-12 md:px-12 pt-10 md:pt-12 lg:pt-10'>
-          <hr className='max-w-7xl mx-auto border-border dark:border-border-dark' />
+          <hr className='border-border dark:border-border-dark layout' />
         </div>
         <footer className='text-primary py-12 px-5 sm:px-12 md:px-12 sm:py-12 md:py-16 lg:py-14'>
-          <div className='grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-8 max-w-7xl mx-auto'>
+          <div className='grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-x-12 gap-y-8 layout'>
             <div className='order-last justify-self-center sm:justify-self-start sm:order-first col-span-2 sm:col-span-1 flex flex-col'>
               <UnstyledLink href='/'>
                 <div>
                   <Logo
-                    className='mt-4 w-48 text-9xl'
+                    className='mt-4 w-44 xl:w-48 text-9xl'
                     height='auto'
                     width='auto'
                   />
