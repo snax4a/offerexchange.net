@@ -49,7 +49,7 @@ module.exports = {
           // static data
           ['^@/data'],
           // components
-          ['^@/components', '^@/container'],
+          ['^@/components', '^@/sections', '^@/container'],
           // zustand store
           ['^@/store'],
           // Other imports
