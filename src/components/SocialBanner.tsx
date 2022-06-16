@@ -12,10 +12,10 @@ export default function SocialBanner(props: SocialBannerProps) {
   const { bannerText, bannerLink, bannerLinkText } = props;
 
   return (
-    <div className='w-full bg-gray-100 dark:bg-gray-700 fixed py-2 h-16 sm:h-10 sm:py-0 flex items-center justify-center flex-col sm:flex-row z-[100]'>
+    <div className='fixed z-[100] flex h-16 w-full flex-col items-center justify-center bg-gray-100 py-2 dark:bg-gray-700 sm:h-10 sm:flex-row sm:py-0'>
       {bannerText}
       <UnderlineLink
-        className='ml-0 sm:ml-2 text-link dark:text-link-dark'
+        className='text-link dark:text-link-dark ml-0 sm:ml-2'
         href={bannerLink}
       >
         {bannerLinkText}
