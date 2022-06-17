@@ -24,3 +24,7 @@ export function openGraph({
     ogTemplateTitle ? `&templateTitle=${ogTemplateTitle}` : ''
   }`;
 }
+
+export const formatPrice = (number: number, lang: string, currency: string) => {
+  return new Intl.NumberFormat(lang, { style: 'currency', currency }).format(number);
+};
