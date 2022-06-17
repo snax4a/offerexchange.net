@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Page from '@/components/layout/Page';
 import Seo from '@/components/Seo';
+import FAQ from '@/sections/FAQ';
 import Features from '@/sections/Features';
 
 export default function HomePage() {
@@ -9,6 +10,7 @@ export default function HomePage() {
     <Page>
       <Seo />
       <Features />
+      <FAQ />
     </Page>
   );
 }

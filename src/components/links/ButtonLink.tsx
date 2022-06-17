@@ -24,14 +24,14 @@ const ButtonLink = React.forwardRef<HTMLAnchorElement, ButtonLinkProps>(
         ref={ref}
         {...rest}
         className={clsxm(
-          'inline-flex items-center rounded px-4 py-2 font-semibold',
+          'inline-flex items-center rounded-lg px-4 py-2 font-semibold',
           'focus-visible:ring-primary-500 focus:outline-none focus-visible:ring',
           'shadow-sm',
           'transition-colors duration-75',
           //#region  //*=========== Variants ===========
           [
             variant === 'primary' && [
-              'bg-primary-500 text-white',
+              'bg-primary text-white',
               'border-primary-600 border',
               'hover:bg-primary-600 hover:text-white',
               'active:bg-primary-500',
