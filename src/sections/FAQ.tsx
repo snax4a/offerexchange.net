@@ -3,9 +3,9 @@ import { ChevronUpIcon } from '@heroicons/react/solid';
 import clsx from 'clsx';
 import React from 'react';
 
-import BlockTitle from '@/components/BlockTitle';
 import Container from '@/components/Container';
 import ButtonLink from '@/components/links/ButtonLink';
+import SectionHeading from '@/components/SectionHeading';
 
 interface AccordionItem {
   isExpanded: boolean;
@@ -85,9 +85,9 @@ export default function FAQ() {
   return (
     <section id='faq' className='pb-16'>
       <Container>
-        <BlockTitle
-          title='Często zadawane pytania'
-          subtitle='Nasz zespół wsparcia jest zawsze gotowy do pomocy'
+        <SectionHeading
+          heading='Często zadawane pytania'
+          subheading='Nasz zespół wsparcia jest zawsze gotowy do pomocy'
         />
 
         <div className='grid grid-cols-1 items-center gap-14 lg:grid-cols-[400px_1fr]'>

@@ -1,8 +1,8 @@
 import { StaticImageData } from 'next/image';
 
-import BlockTitle from '@/components/BlockTitle';
 import Container from '@/components/Container';
 import NextImage from '@/components/NextImage';
+import SectionHeading from '@/components/SectionHeading';
 
 import featureIcon1 from '~/images/features/feature-icon-1.png';
 import featureIcon2 from '~/images/features/feature-icon-2.png';
@@ -61,9 +61,9 @@ export default function Features() {
   return (
     <section id='features' className='py-20'>
       <Container>
-        <BlockTitle
-          title='Jakie funkcje oferuje nasz produkt?'
-          subtitle='Główne funkcje są wyróżnione poniżej'
+        <SectionHeading
+          heading='Jakie funkcje oferuje nasz produkt?'
+          subheading='Główne funkcje są wyróżnione poniżej'
         />
         <div className='grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2'>
           {FEATURES_DATA.map((feature, index) => (
