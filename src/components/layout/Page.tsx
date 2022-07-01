@@ -17,10 +17,10 @@ export default function Page({ children }: PageProps) {
           bannerLinkText={process.env.NEXT_PUBLIC_SOCIAL_BANNER_LINK_TEXT ?? ''}
         />
       )}
-      <div className='flex h-auto flex-row lg:h-screen'>
+      <div className='relative flex min-h-full flex-row'>
         {/* No fallback UI so need to be careful not to suspend directly inside. */}
         <React.Suspense fallback={null}>
-          <div className='flex h-full w-full flex-1 self-stretch'>
+          <div className='flex min-h-full w-full flex-1 self-stretch'>
             <main className='mt-16 flex grow flex-col justify-around self-stretch sm:mt-10'>
               {children}
               <Footer />

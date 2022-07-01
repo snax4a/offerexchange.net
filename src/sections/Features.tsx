@@ -52,7 +52,7 @@ const FEATURES_DATA: Feature[] = [
 
 export default function Features() {
   return (
-    <section id='features' className='py-20'>
+    <section id='features' className='py-8 lg:py-20'>
       <Container>
         <SectionHeading
           heading='Jakie funkcje oferuje nasz produkt?'

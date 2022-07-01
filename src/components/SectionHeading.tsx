@@ -12,7 +12,7 @@ export default function SectionHeading({
   className,
 }: SectionHeadingProps) {
   return (
-    <div className={clsxm('my-20 text-center', className)}>
+    <div className={clsxm('my-14 text-center md:my-20', className)}>
       {!!heading && (
         <h3 className='mb-4 text-2xl font-bold text-primary md:mb-5 md:text-3xl'>
           {heading}
