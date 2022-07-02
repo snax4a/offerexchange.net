@@ -1,6 +1,8 @@
 import clsx from 'clsx';
 import * as React from 'react';
 
+import { ROUTES } from '@/lib/constants';
+
 import { IconFacebookCircle } from '@/components/icons/IconFacebookCircle';
 import { IconTwitter } from '@/components/icons/IconTwitter';
 import UnderlineLink from '@/components/links/UnderlineLink';
@@ -21,7 +23,7 @@ export default function Footer() {
         <footer className='py-12 px-5 text-primary sm:px-12 sm:py-12 md:px-12 md:py-16 lg:py-14'>
           <div className='layout grid grid-cols-2 gap-x-12 gap-y-8 sm:grid-cols-3 xl:grid-cols-4'>
             <div className='order-last col-span-2 flex flex-col justify-self-center sm:order-first sm:col-span-1 sm:justify-self-start'>
-              <UnstyledLink href='/'>
+              <UnstyledLink href={ROUTES.HOME}>
                 <div>
                   <Logo
                     className='mt-4 w-44 text-9xl xl:w-48'
@@ -30,7 +32,7 @@ export default function Footer() {
                   />
                 </div>
               </UnstyledLink>
-              <UnstyledLink href='https://conetso.com'>
+              <UnstyledLink href={siteConfig.copyrightUrl}>
                 <div className='mt-3 pr-0.5 text-left text-xs'>
                   {siteConfig.copyright}
                 </div>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 import Footer from '@/components/layout/Footer';
+import Header from '@/components/layout/Header';
 import SocialBanner from '@/components/SocialBanner';
 
 interface PageProps {
@@ -20,7 +21,8 @@ export default function Page({ children }: PageProps) {
       <div className='relative flex min-h-full flex-row'>
         {/* No fallback UI so need to be careful not to suspend directly inside. */}
         <React.Suspense fallback={null}>
-          <div className='flex min-h-full w-full flex-1 self-stretch'>
+          <div className='flex min-h-full w-full flex-1 flex-col self-stretch'>
+            <Header />
             <main className='mt-16 flex grow flex-col justify-around self-stretch sm:mt-10'>
               {children}
               <Footer />

@@ -1,31 +1,60 @@
-import * as React from 'react';
+import { Popover } from '@headlessui/react';
+import { MenuIcon } from '@heroicons/react/outline';
+import clsx from 'clsx';
 
+import { ROUTES } from '@/lib/constants';
+import { useIsScrolled } from '@/hooks/useIsScrolled';
+
+import Container from '@/components/Container';
 import UnstyledLink from '@/components/links/UnstyledLink';
+import DesktopNavigation from '@/components/navigation/DesktopNavigation';
+import MobileNavigation from '@/components/navigation/MobileNavigation';
 
-const links = [
-  { href: '/', label: 'Route 1' },
-  { href: '/', label: 'Route 2' },
-];
+import Logo from '~/svg/logo.svg';
+import SmallLogo from '~/svg/logo-small.svg';
 
 export default function Header() {
+  const isScrolled = useIsScrolled();
+
   return (
-    <header className='sticky top-0 z-50 bg-white'>
-      <div className='layout flex h-14 items-center justify-between'>
-        <UnstyledLink href='/' className='font-bold hover:text-gray-600'>
-          Home
-        </UnstyledLink>
-        <nav>
-          <ul className='flex items-center justify-between space-x-4'>
-            {links.map(({ href, label }) => (
-              <li key={`${href}${label}`}>
-                <UnstyledLink href={href} className='hover:text-gray-600'>
-                  {label}
-                </UnstyledLink>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
+    <header
+      className={clsx('sticky top-0 z-50 bg-white transition duration-500', {
+        'shadow-md': isScrolled,
+      })}
+    >
+      <Container>
+        <Popover className='relative'>
+          <div className='flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10'>
+            <UnstyledLink
+              href={ROUTES.HOME}
+              className='rounded-md pr-2 focus-visible:ring-offset-8'
+            >
+              <span className='sr-only'>Strona główna</span>
+              <Logo
+                className='w-44 text-9xl md:hidden lg:block xl:w-48'
+                height='auto'
+                width='auto'
+              />
+              <SmallLogo
+                className='hidden w-10 md:block lg:hidden'
+                height='auto'
+                width='auto'
+              />
+            </UnstyledLink>
+
+            <div className='-my-2 -mr-2 md:hidden'>
+              <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus-visible:ring focus-visible:ring-opacity-75'>
+                <span className='sr-only'>Otwórz menu</span>
+                <MenuIcon className='h-6 w-6' aria-hidden='true' />
+              </Popover.Button>
+            </div>
+
+            <DesktopNavigation />
+          </div>
+
+          <MobileNavigation />
+        </Popover>
+      </Container>
     </header>
   );
 }

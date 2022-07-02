@@ -5,6 +5,7 @@ import Seo from '@/components/Seo';
 import FAQ from '@/sections/FAQ';
 import Features from '@/sections/Features';
 import Pricing from '@/sections/Pricing';
+import Stats from '@/sections/Stats';
 
 export default function HomePage() {
   return (
@@ -12,6 +13,7 @@ export default function HomePage() {
       <Seo />
       <Features />
       <Pricing />
+      <Stats />
       <FAQ />
     </Page>
   );

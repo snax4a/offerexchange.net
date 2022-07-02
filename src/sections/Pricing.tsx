@@ -25,7 +25,7 @@ export default function Pricing() {
     'flex min-h-[50px] items-center [&+li]:border-t border-slate-300/70 font-medium xl:min-h-[59px]';
 
   return (
-    <section id='pricing' className='mb-20'>
+    <section id='pricing' className='mb-20 scroll-mt-20'>
       <Container>
         <SectionHeading
           className='mb-16'
@@ -71,7 +71,7 @@ function BillingIntervalSwitch({
   setBillingInterval,
 }: BillingIntervalSwitchProps) {
   const buttonClasses =
-    'm-1 whitespace-nowrap rounded-md py-2 px-4 text-sm font-medium focus-visible:outline-none focus-visible:ring focus-visible:ring-opacity-75 sm:w-auto sm:px-8';
+    'm-1 whitespace-nowrap rounded-md py-2 px-4 text-sm font-medium focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 sm:w-auto sm:px-8';
 
   return (
     <div className='mb-12 flex justify-center'>

@@ -55,6 +55,10 @@
     @apply h-full;
   }
 
+  a {
+    @apply ring-offset-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75;
+  }
+
   /* #region  /**=========== Typography =========== */
   .h0 {
     @apply font-primary text-3xl font-bold md:text-5xl;

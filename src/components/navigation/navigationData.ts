@@ -1,0 +1,96 @@
+import {
+  ChartBarIcon,
+  CursorClickIcon,
+  DocumentReportIcon,
+  RefreshIcon,
+  ShieldCheckIcon,
+  ViewGridIcon,
+} from '@heroicons/react/outline';
+
+import { ROUTES } from '@/lib/constants';
+
+export interface FeatureItem {
+  name: string;
+  description: string;
+  href: string;
+  icon: (props: React.ComponentProps<'svg'>) => JSX.Element;
+}
+
+export interface NavigationItem {
+  name: string;
+  description: string;
+  href: string;
+}
+
+export const featureItems: FeatureItem[] = [
+  {
+    name: 'Wysyłanie zapytań',
+    description: 'Wysyłaj zapytania ofertowe do swoich handlowców.',
+    href: '#',
+    icon: ChartBarIcon,
+  },
+  {
+    name: 'Zbieranie ofert',
+    description: 'System zbierze dla Ciebie oferty handlowców w jednym miejscu.',
+    href: '#',
+    icon: CursorClickIcon,
+  },
+  {
+    name: 'Porównywanie ofert',
+    description: 'Porównuj otrzymane oferty za pomocą porównywarki.',
+    href: '#',
+    icon: ShieldCheckIcon,
+  },
+  {
+    name: 'Składanie zamówień',
+    description: 'Powiadom handlowców o chęci zakupu produktów z ich ofert.',
+    href: '#',
+    icon: ViewGridIcon,
+  },
+  {
+    name: 'Zarządzanie handlowcami',
+    description: 'Utwórz listę swoich handlowców i organizuj ich w grupach.',
+    href: '#',
+    icon: RefreshIcon,
+  },
+  {
+    name: 'Zarządzanie adresami',
+    description: 'Utwórz listę swoich adresów dostaw aby przyspieszyć składanie zapytań.',
+    href: '#',
+    icon: DocumentReportIcon,
+  },
+];
+
+export const navigationItems: NavigationItem[] = [
+  {
+    name: 'Cennik',
+    description: 'Zapoznaj się z uczciwym cennikiem naszej aplikacji.',
+    href: ROUTES.PRICING,
+  },
+  {
+    name: 'FAQ',
+    description: 'Poznaj odpowiedzi na często zadawane pytania.',
+    href: ROUTES.FAQ,
+  },
+  {
+    name: 'O nas',
+    description: 'Dowiedz się więcej o naszej firmie.',
+    href: ROUTES.ABOUT,
+  },
+  {
+    name: 'Centrum pomocy',
+    description:
+      'Jeśli masz jakieś pytania lub problem z aplikacją, skontaktuj się z nami.',
+    href: ROUTES.SUPPORT,
+  },
+  {
+    name: 'Regulamin',
+    description: 'Zapoznaj się z zasadami działania naszego serwisu.',
+    href: ROUTES.RULES,
+  },
+  {
+    name: 'Polityka Prywatności',
+    description: 'Zapoznaj się z tym jakie dane osobowe są przez nas przetwarzane.',
+    href: ROUTES.PRIVACY_POLICY,
+  },
+];

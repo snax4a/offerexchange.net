@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+import 'focus-visible';
 
 import '@/styles/globals.css';
 

@@ -8,7 +8,10 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html lang='pl'>
+      <Html
+        lang='pl'
+        className="h-full scroll-smooth bg-white antialiased [font-feature-settings:'ss01']"
+      >
         <Head>
           <link
             rel='preload'
