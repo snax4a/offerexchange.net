@@ -13,7 +13,7 @@ import { featureItems, navigationItems } from '@/components/navigation/navigatio
 export default function DesktopNavigation() {
   return (
     <div className='hidden md:flex md:flex-1 md:items-center md:justify-between'>
-      <Popover.Group as='nav' className='flex space-x-10'>
+      <Popover.Group as='nav' className='flex space-x-8 lg:space-x-10'>
         <FeatureItems />
         <NavigationItems />
       </Popover.Group>

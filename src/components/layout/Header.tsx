@@ -19,12 +19,12 @@ export default function Header() {
   return (
     <header
       className={clsx('sticky top-0 z-50 bg-white transition duration-500', {
-        'shadow-md': isScrolled,
+        'shadow-sm md:shadow-md': isScrolled,
       })}
     >
       <Container>
         <Popover className='relative'>
-          <div className='flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start md:space-x-10'>
+          <div className='flex items-center justify-between py-6 md:justify-start md:space-x-10'>
             <UnstyledLink
               href={ROUTES.HOME}
               className='rounded-md pr-2 focus-visible:ring-offset-8'
