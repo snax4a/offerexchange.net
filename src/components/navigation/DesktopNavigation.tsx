@@ -45,10 +45,12 @@ function FeatureItems() {
     <Popover className='relative'>
       {({ open }) => (
         <>
+          {/* There is a bug with Popover component that triggers :focus-visible on mouse interactions */}
+          {/* TODO: We should change the focus state to ring when it gets fixed to stay consistent with other elements */}
           <Popover.Button
             className={clsx(
               open ? 'text-gray-900' : 'text-gray-500',
-              'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-4'
+              'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus-visible:text-secondary'
             )}
           >
             <span className='whitespace-nowrap'>Funkcje aplikacji</span>
@@ -140,7 +142,7 @@ function NavigationItems() {
             <Popover.Button
               className={clsx(
                 open ? 'text-gray-900' : 'text-gray-500',
-                'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-4'
+                'group inline-flex items-center rounded-md bg-white text-base font-medium hover:text-gray-900 focus:outline-none focus-visible:text-secondary'
               )}
             >
               <span>Więcej</span>
