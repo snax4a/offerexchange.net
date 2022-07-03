@@ -13,6 +13,8 @@ module.exports = {
   //   ],
   // },
 
+  experimental: { images: { allowFutureImage: true } },
+
   // SVGR
   webpack(config) {
     config.module.rules.push({
