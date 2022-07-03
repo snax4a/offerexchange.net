@@ -28,7 +28,7 @@ export default function Pricing() {
     <section id='pricing' className='mb-20 scroll-mt-20'>
       <Container>
         <SectionHeading
-          className='mb-16'
+          className='lg:mb-16'
           heading='Plany cenowe'
           subheading='Poznaj plany cenowe dopasowane do Twoich potrzeb'
         />
@@ -36,7 +36,7 @@ export default function Pricing() {
           selectedInterval={billingInterval}
           setBillingInterval={setBillingInterval}
         />
-        <div className='mt-28 grid grid-cols-1 justify-center lg:grid-cols-[250px_1fr]'>
+        <div className='grid grid-cols-1 justify-center lg:mt-24 lg:grid-cols-[250px_1fr]'>
           {isDesktop && (
             <ul className='mt-[138px] text-sm xl:mt-[142px] xl:text-base'>
               <li className={listItemClasses}>Liczba zapytań</li>
