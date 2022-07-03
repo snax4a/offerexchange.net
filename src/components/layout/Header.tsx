@@ -21,25 +21,21 @@ export default function Header() {
   return (
     <header
       className={clsx('sticky top-0 z-50 transition duration-500', {
-        'shadow-sm md:shadow-md': isScrolled,
+        'shadow-md': isScrolled,
         'bg-gray-50': !isScrolled && pathname === ROUTES.HOME,
         'bg-white': isScrolled || pathname !== ROUTES.HOME,
       })}
     >
       <Container>
         <Popover className='relative'>
-          <div className='flex items-center justify-between py-6'>
+          <div className='flex items-center justify-between py-4 md:py-6'>
             <div className='flex lg:flex-1'>
               <UnstyledLink
                 href={ROUTES.HOME}
                 className='rounded-md pr-2 focus-visible:ring-offset-8'
               >
                 <span className='sr-only'>Strona główna</span>
-                <Logo
-                  className='w-44 text-9xl md:hidden lg:block xl:w-48'
-                  height='auto'
-                  width='auto'
-                />
+                <Logo className='h-6 w-44 text-9xl md:hidden md:h-7 lg:block xl:w-48' />
                 <SmallLogo
                   className='hidden w-10 md:block lg:hidden'
                   height='auto'

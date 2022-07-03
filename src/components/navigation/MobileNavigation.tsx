@@ -22,7 +22,7 @@ export default function MobileNavigation() {
     >
       <Popover.Panel
         focus
-        className='absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 pt-4 transition md:hidden'
+        className='absolute inset-x-0 top-0 z-50 origin-top-right transform py-2 pt-4 transition md:hidden'
       >
         <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
           <div className='px-5 pt-5 pb-6'>
@@ -44,12 +44,12 @@ export default function MobileNavigation() {
                   <UnstyledLink
                     key={item.name}
                     href={item.href}
-                    className='-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50 focus-visible:ring-inset'
+                    className='-m-3 flex items-center rounded-lg p-2 hover:bg-gray-50 focus-visible:ring-inset sm:p-3'
                   >
                     <div className='flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white'>
                       <item.icon className='h-6 w-6' aria-hidden='true' />
                     </div>
-                    <div className='ml-4 text-base font-medium text-gray-900'>
+                    <div className='ml-4 text-sm font-medium text-gray-900 sm:text-base'>
                       {item.name}
                     </div>
                   </UnstyledLink>
@@ -64,7 +64,7 @@ export default function MobileNavigation() {
                 <UnstyledLink
                   key={item.name}
                   href={item.href}
-                  className='rounded-sm text-base font-medium text-gray-900 hover:text-gray-700 focus-visible:!ring-offset-4'
+                  className='rounded-sm text-sm font-medium text-gray-900 hover:text-gray-700 focus-visible:!ring-offset-4 sm:text-base'
                 >
                   {item.name}
                 </UnstyledLink>
