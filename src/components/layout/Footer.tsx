@@ -41,22 +41,22 @@ export default function Footer() {
 
             <div className='flex flex-col'>
               <FooterLink isHeader={true}>Produkt</FooterLink>
-              <FooterLink href='/features'>Jak to działa</FooterLink>
-              <FooterLink href='/pricing'>Cennik</FooterLink>
-              <FooterLink href='/faq'>FAQ</FooterLink>
+              <FooterLink href={ROUTES.FEATURES}>Jak to działa</FooterLink>
+              <FooterLink href={ROUTES.PRICING}>Cennik</FooterLink>
+              <FooterLink href={ROUTES.FAQ}>FAQ</FooterLink>
             </div>
 
             <div className='flex flex-col'>
               <FooterLink isHeader={true}>Ważne linki</FooterLink>
-              <FooterLink href='/terms'>Regulamin</FooterLink>
-              <FooterLink href='/privacy'>Polityka prywatności</FooterLink>
-              <FooterLink href='/about'>O nas</FooterLink>
+              <FooterLink href={ROUTES.RULES}>Regulamin</FooterLink>
+              <FooterLink href={ROUTES.PRIVACY_POLICY}>Polityka prywatności</FooterLink>
+              <FooterLink href={ROUTES.ABOUT}>O nas</FooterLink>
             </div>
 
             <div className='flex flex-col sm:col-start-2 xl:col-start-4'>
               <FooterLink isHeader={true}>Kontakt</FooterLink>
-              <FooterLink href='/support'>Pomoc techniczna</FooterLink>
-              <FooterLink href='/contact-sales'>Dział sprzedaży</FooterLink>
+              <FooterLink href={ROUTES.SUPPORT}>Pomoc techniczna</FooterLink>
+              <FooterLink href={ROUTES.SUPPORT}>Dział sprzedaży</FooterLink>
               <div className='mt-8 flex flex-row gap-x-2'>
                 <UnstyledLink
                   aria-label={`${siteConfig.siteName} on Facebook`}
