@@ -9,7 +9,7 @@ export default function Stats() {
       <Container>
         <SectionHeading
           heading='Zaufało nam już ponad 40 firm'
-          subheading='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus repellat laudantium.'
+          subheading='Przyszłościowo myślące firmy optymalizują czas i koszty swoich codziennych zamówień.'
         />
       </Container>
       <div className='mt-10 bg-white pb-12 md:pb-16'>
