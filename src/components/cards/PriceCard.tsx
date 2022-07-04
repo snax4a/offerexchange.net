@@ -45,8 +45,8 @@ export default function PriceCard({ data, isRecommended }: PriceCardProps) {
       )}
 
       <header className='mt-8 space-y-4'>
-        <h4 className='font-medium text-secondary/90'>{data.nickname}</h4>
-        <h3 className='md:text-lg xl:text-2xl'>
+        <h4 className='text-lg font-medium text-secondary/90'>{data.nickname}</h4>
+        <h3 className='text-2xl lg:text-xl xl:text-2xl'>
           {formatPrice(data.amount / 100, 'pl', data.currency)} /{' '}
           <small className='font-normal'>
             {data.interval === 'month' ? 'msc.' : 'rok'}
