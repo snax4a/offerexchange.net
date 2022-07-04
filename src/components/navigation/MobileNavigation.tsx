@@ -27,9 +27,9 @@ export default function MobileNavigation() {
         <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
           <div className='px-5 pt-5 pb-6'>
             <div className='flex items-center justify-between'>
-              <div>
+              <UnstyledLink href={ROUTES.HOME}>
                 <Logo className='w-44 text-9xl xl:w-48' height='auto' width='auto' />
-              </div>
+              </UnstyledLink>
               <div className='-mr-2'>
                 <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:!outline-none focus-visible:ring focus-visible:ring-opacity-75'>
                   <span className='sr-only'>Zamknij menu</span>
