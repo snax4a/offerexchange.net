@@ -1021,7 +1021,7 @@ export default function Rules() {
                 Załączniki stanowiące integralną część Regulaminu:
                 <ul role='list'>
                   <li>
-                    <PrimaryLink href='/documents/privacy-policy-pl.pdf'>
+                    <PrimaryLink href='/documents/privacy-policy-pl.pdf' openNewTab>
                       Załącznik nr 1
                     </PrimaryLink>{' '}
                     - Polityka prywatności/Informacja o ochronie danych osobowych.
