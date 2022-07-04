@@ -5,7 +5,7 @@ import PrimaryLink from '@/components/links/PrimaryLink';
 
 import { siteConfig } from '@/config/site';
 
-export default function Rules() {
+export default function PrivacyPolicy() {
   return (
     <Page>
       <div className='relative overflow-hidden bg-white py-16'>
@@ -266,19 +266,19 @@ export default function Rules() {
               Twoje dane osobowe możemy udostępniać następującym kategoriom podmiotów:
               podwykonawcom, czyli podmiotom, z których korzystamy przy ich przetwarzaniu,
               takim jak:
-              <ul role='list'>
-                <li>
-                  firma informatyczna, z której usług korzystamy w związku z utrzymaniem
-                  serwera
-                </li>
-                <li>firmy, które na nasze zlecenie prowadzą działania marketingowe</li>
-                <li>
-                  kancelaria prawna, z której usług korzystamy w celach dochodzenia
-                  roszczeń, czy rozstrzyganiu ewentualnych sporów
-                </li>
-                <li>podmiot prowadzący obsługę księgową i kadrową naszej firmy</li>
-              </ul>
             </p>
+            <ul role='list'>
+              <li>
+                firma informatyczna, z której usług korzystamy w związku z utrzymaniem
+                serwera
+              </li>
+              <li>firmy, które na nasze zlecenie prowadzą działania marketingowe</li>
+              <li>
+                kancelaria prawna, z której usług korzystamy w celach dochodzenia
+                roszczeń, czy rozstrzyganiu ewentualnych sporów
+              </li>
+              <li>podmiot prowadzący obsługę księgową i kadrową naszej firmy</li>
+            </ul>
 
             <h3 className='text-start'>
               IV. Przekazywanie danych do państw trzecich lub organizacji międzynarodowych
@@ -395,25 +395,24 @@ export default function Rules() {
             <p>
               Administrator przetwarza dane zawarte w plikach „cookies” podczas
               korzystania przez odwiedzających ze strony w następujących celach:
-              <ul role='list'>
-                <li>
-                  zapamiętywania danych z wypełnianych formularzy kontaktu oraz
-                  rekrutacji.
-                </li>
-                <li>
-                  prowadzenia anonimowych statystyk przedstawiających sposób korzystania z
-                  serwisu internetowego.
-                </li>
-                <li>
-                  dostosowywania zawartości serwisu internetowego do indywidualnych
-                  preferencji użytkownika.
-                </li>
-                <li>
-                  zapamiętywania wyboru użytkownika w zakresie zgody (lub nie) na
-                  przetwarzanie danych osobowych użytkownika.
-                </li>
-              </ul>
             </p>
+            <ul role='list'>
+              <li>
+                zapamiętywania danych z wypełnianych formularzy kontaktu oraz rekrutacji.
+              </li>
+              <li>
+                prowadzenia anonimowych statystyk przedstawiających sposób korzystania z
+                serwisu internetowego.
+              </li>
+              <li>
+                dostosowywania zawartości serwisu internetowego do indywidualnych
+                preferencji użytkownika.
+              </li>
+              <li>
+                zapamiętywania wyboru użytkownika w zakresie zgody (lub nie) na
+                przetwarzanie danych osobowych użytkownika.
+              </li>
+            </ul>
 
             <h3 className='text-start'>III. Dlaczego przechowujemy pliki „cookies”?</h3>
             <p>
