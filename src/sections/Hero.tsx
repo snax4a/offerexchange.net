@@ -4,16 +4,37 @@ import { StaticImageData } from 'next/image';
 import Container from '@/components/Container';
 import ImageSlider from '@/components/ImageSlider';
 
-import appPlaceholder from '~/images/app-previews/app-placeholder.jpeg';
+import offerListScreen from '~/images/app-previews/lista-ofert.jpeg';
+import ordersListScreen from '~/images/app-previews/lista-zamowien.jpeg';
+import inquiryListScreen from '~/images/app-previews/lista-zapytan-ofertowych.jpeg';
+import comparisonScreen from '~/images/app-previews/porownywarka-ofert-handlowych.jpeg';
+import addressesScreen from '~/images/app-previews/zarzadzanie-adresami.jpeg';
+import tradersScreen from '~/images/app-previews/zarzadzanie-handlowcami.jpeg';
 
 const sliderItems: Array<{ name: string; image: StaticImageData }> = [
   {
-    name: 'App screen 1',
-    image: appPlaceholder,
+    name: 'Lista zapytań handlowych',
+    image: inquiryListScreen,
   },
   {
-    name: 'App screen 2',
-    image: appPlaceholder,
+    name: 'Lista ofert',
+    image: offerListScreen,
+  },
+  {
+    name: 'Porównywarka ofert handlowych',
+    image: comparisonScreen,
+  },
+  {
+    name: 'Lista zamówień',
+    image: ordersListScreen,
+  },
+  {
+    name: 'Zarządzanie handlowcami',
+    image: tradersScreen,
+  },
+  {
+    name: 'Zarządzanie adresami',
+    image: addressesScreen,
   },
 ];
 
@@ -117,7 +138,7 @@ export default function Hero() {
                 {sliderItems.map((slide, index) => (
                   <Image
                     key={`slide-${index}`}
-                    className='relative rounded-lg shadow-lg'
+                    className='relative rounded-3xl shadow-lg'
                     placeholder='blur'
                     src={slide.image}
                     alt={slide.name}
