@@ -2,12 +2,15 @@ import * as React from 'react';
 
 import Page from '@/components/layout/Page';
 import PrimaryLink from '@/components/links/PrimaryLink';
+import Seo from '@/components/Seo';
 
 import { siteConfig } from '@/config/site';
 
 export default function PrivacyPolicy() {
   return (
     <Page>
+      <Seo title={`${siteConfig.siteName} | Polityka prywatności`} />
+
       <div className='relative overflow-hidden bg-white py-16'>
         <div className='hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full'>
           <div className='relative mx-auto h-full max-w-prose text-lg' aria-hidden='true'>
