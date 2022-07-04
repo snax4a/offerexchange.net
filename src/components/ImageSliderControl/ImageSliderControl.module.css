@@ -1,0 +1,28 @@
+.control {
+  @apply absolute bottom-10 right-11 z-30 flex select-none
+  flex-row rounded-lg border border-slate-700 bg-slate-800 text-white shadow-xl;
+  height: 48px;
+}
+
+.leftControl,
+.rightControl {
+  @apply cursor-pointer px-9;
+  transition: background-color 0.2s ease;
+}
+
+.leftControl:hover,
+.rightControl:hover {
+  @apply bg-slate-600;
+}
+
+.leftControl {
+  @apply rounded-l-lg;
+}
+
+.rightControl {
+  @apply rounded-r-lg border-l border-slate-700;
+}
+
+.leftControl {
+  margin-right: -1px;
+}

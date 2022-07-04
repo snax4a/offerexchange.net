@@ -1,6 +1,20 @@
 import Image from 'next/future/image';
+import { StaticImageData } from 'next/image';
+
+import ImageSlider from '@/components/ImageSlider';
 
 import appPlaceholder from '~/images/app-previews/app-placeholder.jpeg';
+
+const sliderItems: Array<{ name: string; image: StaticImageData }> = [
+  {
+    name: 'App screen 1',
+    image: appPlaceholder,
+  },
+  {
+    name: 'App screen 2',
+    image: appPlaceholder,
+  },
+];
 
 export default function Hero() {
   return (
@@ -97,12 +111,19 @@ export default function Hero() {
             <div className='w-full flex-1 bg-gray-800' />
           </div>
           <div className='mx-auto max-w-7xl px-4 sm:px-6'>
-            <Image
-              className='relative rounded-lg shadow-lg'
-              placeholder='blur'
-              src={appPlaceholder}
-              alt='App screenshot'
-            />
+            <div className='flex items-center justify-center overflow-x-hidden'>
+              <ImageSlider showThumbnails={false}>
+                {sliderItems.map((slide, index) => (
+                  <Image
+                    key={`slide-${index}`}
+                    className='relative rounded-lg shadow-lg'
+                    placeholder='blur'
+                    src={slide.image}
+                    alt={slide.name}
+                  />
+                ))}
+              </ImageSlider>
+            </div>
           </div>
         </div>
       </div>
