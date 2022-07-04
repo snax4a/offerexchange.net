@@ -116,7 +116,7 @@ export default function Rules() {
         </div>
         <div className='relative px-4 text-justify sm:px-6 lg:px-8'>
           <div className='mx-auto max-w-prose text-lg'>
-            <div className='relative mx-auto pt-10 pb-12 text-center md:pt-20 md:pb-24'>
+            <div className='relative mx-auto py-6 text-center sm:pb-12 sm:pt-10 md:pt-20 md:pb-24'>
               <h1 className='text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl'>
                 Regulamin
               </h1>
@@ -124,7 +124,7 @@ export default function Rules() {
                 Ostatnia aktualizacja 3 lipca 2022 r.
               </p>
             </div>
-            <p className='mt-8 text-lg leading-8 text-gray-500'>
+            <p className='mt-8 text-base leading-6 text-gray-500 md:text-lg md:leading-8'>
               Niniejszy regulamin został sporządzony w oparciu o przepisy prawa
               obowiązujące na terytorium Rzeczpospolitej Polskiej, a przedmiotem jego
               regulacji są zasady funkcjonowania oraz warunki korzystania z Aplikacji
@@ -136,7 +136,7 @@ export default function Rules() {
               kontaktów handlowych pomiędzy nimi.
             </p>
           </div>
-          <div className='prose prose-lg prose-indigo mx-auto mt-10 text-gray-500'>
+          <div className='prose prose-sm prose-indigo mx-auto mt-10 text-gray-500 md:prose-lg'>
             <h3 className='text-start'>I. Definicje użyte w niniejszym regulaminie</h3>
 
             <ul role='list' className='list-decimal'>

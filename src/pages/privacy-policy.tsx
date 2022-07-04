@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
         </div>
         <div className='relative px-4 text-justify sm:px-6 lg:px-8'>
           <div className='mx-auto max-w-prose text-lg'>
-            <div className='relative mx-auto pt-10 pb-12 text-center md:pt-20 md:pb-24'>
+            <div className='relative mx-auto py-6 text-center sm:pb-12 sm:pt-10 md:pt-20 md:pb-24'>
               <div>
                 <h1 className='text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl'>
                   Polityka prywatności
@@ -128,7 +128,7 @@ export default function PrivacyPolicy() {
                 Ostatnia aktualizacja 3 lipca 2022 r.
               </p>
             </div>
-            <p className='mt-8 text-lg leading-8 text-gray-500'>
+            <p className='mt-8 text-base leading-6 text-gray-500 md:text-lg md:leading-8'>
               Od 25 maja 2018 r. w Polsce stosowane jest Rozporządzenie Parlamentu
               Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie
               ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w
@@ -139,7 +139,7 @@ export default function PrivacyPolicy() {
               wymaganą Rozporządzeniem i dotyczącą przetwarzania danych osobowych.
             </p>
           </div>
-          <div className='prose prose-lg prose-indigo mx-auto mt-10 text-gray-500'>
+          <div className='prose prose-sm prose-indigo mx-auto mt-10 text-gray-500 md:prose-lg'>
             <h3 className='text-start'>I. Administrator danych osobowych</h3>
 
             <p>
