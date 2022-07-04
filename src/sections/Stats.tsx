@@ -5,7 +5,7 @@ import SectionHeading from '@/components/SectionHeading';
 
 export default function Stats() {
   return (
-    <section id='stats' className='bg-gray-50 pt-12 md:pt-16'>
+    <section id='stats' className='bg-gray-50 pt-1 md:pt-16'>
       <Container>
         <SectionHeading
           heading='Zaufało nam już ponad 40 firm'
@@ -23,7 +23,7 @@ export default function Stats() {
                     <dt className='order-2 mt-2 text-lg font-medium leading-6 text-gray-500'>
                       Wysłanych zapytań
                     </dt>
-                    <dd className='order-1 text-5xl font-extrabold text-secondary'>
+                    <dd className='order-1 text-4xl font-extrabold text-secondary sm:text-5xl'>
                       ~200
                     </dd>
                   </div>
@@ -31,7 +31,7 @@ export default function Stats() {
                     <dt className='order-2 mt-2 text-lg font-medium leading-6 text-gray-500'>
                       Zebranych ofert
                     </dt>
-                    <dd className='order-1 text-5xl font-extrabold text-secondary'>
+                    <dd className='order-1 text-4xl font-extrabold text-secondary sm:text-5xl'>
                       ~800
                     </dd>
                   </div>
@@ -39,7 +39,7 @@ export default function Stats() {
                     <dt className='order-2 mt-2 text-lg font-medium leading-6 text-gray-500'>
                       Zaoszczędzonego czasu
                     </dt>
-                    <dd className='order-1 text-5xl font-extrabold text-secondary'>
+                    <dd className='order-1 text-4xl font-extrabold text-secondary sm:text-5xl'>
                       ~23h
                     </dd>
                   </div>

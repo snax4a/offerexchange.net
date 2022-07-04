@@ -8,7 +8,7 @@ interface FeatureCardProps {
 
 export default function FeatureCard({ feature }: FeatureCardProps) {
   return (
-    <div className='flex gap-8'>
+    <div className='flex gap-6 lg:gap-8'>
       <div>
         <NextImage
           useSkeleton

@@ -54,7 +54,7 @@ export default function Features() {
   return (
     <section
       id='features'
-      className='relative scroll-mt-6 bg-gray-50 py-8 sm:scroll-mt-16 lg:pb-20'
+      className='relative scroll-mt-6 bg-gray-50 pt-1 pb-8 sm:scroll-mt-16 lg:pb-20'
     >
       <Container>
         <SectionHeading

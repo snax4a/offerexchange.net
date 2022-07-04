@@ -138,7 +138,7 @@ export default function Hero() {
                 {sliderItems.map((slide, index) => (
                   <Image
                     key={`slide-${index}`}
-                    className='relative rounded-3xl shadow-lg'
+                    className='relative rounded-lg shadow-lg lg:rounded-3xl'
                     placeholder='blur'
                     src={slide.image}
                     alt={slide.name}

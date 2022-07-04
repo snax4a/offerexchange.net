@@ -110,7 +110,7 @@ export default function Testimonials() {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <section id='testimonials' className='py-8 sm:py-10 lg:py-16'>
+    <section id='testimonials' className='pt-1 pb-8 sm:py-10 lg:py-16'>
       <Container>
         <SectionHeading
           heading='Kilka miłych słów od pierwszych klientów...'
