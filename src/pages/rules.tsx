@@ -141,7 +141,14 @@ export default function Rules() {
                 <strong>Administrator</strong> – CONETSO Spółka z o.o. Twarda 18, 00-105
                 Warszawa, zarejestrowana w rejestrze przedsiębiorców Krajowego Rejestru
                 Sądowego pod numerem KRS: 0000923544, NIP: 5252878354, REGON: 52006415,
-                email: office@conetso.com, tel. +48572135583.
+                e-mail:{' '}
+                <PrimaryLink href={`mailto:${siteConfig.legalContactMail}`}>
+                  {siteConfig.legalContactMail}
+                </PrimaryLink>
+                , tel.{' '}
+                <PrimaryLink href={`tel:${siteConfig.legalContactPhone}`}>
+                  {siteConfig.legalContactPhone}
+                </PrimaryLink>
               </li>
               <li>
                 <strong>Offer Exchange, Aplikacja</strong> – aplikacja prowadzona przez
