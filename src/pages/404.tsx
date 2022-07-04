@@ -10,7 +10,7 @@ export default function NotFoundPage() {
     <Page>
       <Seo templateTitle='Not Found' />
 
-      <section className='layout flex h-full flex-col items-center justify-center self-stretch text-center text-black'>
+      <section className='layout flex h-full flex-col items-center justify-center self-stretch pt-10 text-center text-black sm:pt-6'>
         <RiAlarmWarningFill
           size={60}
           className='drop-shadow-glow animate-flicker text-red-500'

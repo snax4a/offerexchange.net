@@ -23,7 +23,7 @@ export default function Page({ children }: PageProps) {
         <React.Suspense fallback={null}>
           <div className='flex min-h-full w-full flex-1 flex-col self-stretch'>
             <Header />
-            <main className='flex grow flex-col justify-around self-stretch'>
+            <main className='mt-10 flex grow flex-col justify-around self-stretch sm:mt-16'>
               {children}
               <Footer />
             </main>

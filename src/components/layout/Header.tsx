@@ -20,10 +20,11 @@ export default function Header() {
 
   return (
     <header
-      className={clsx('sticky top-0 z-50 transition duration-500', {
+      className={clsx('fixed inset-x-0 top-0 z-50 transition duration-500 ease-linear', {
         'shadow-md': isScrolled,
         'bg-gray-50': !isScrolled && pathname === ROUTES.HOME,
         'bg-white': isScrolled || pathname !== ROUTES.HOME,
+        'pt-3 md:pt-0': !isScrolled,
       })}
     >
       <Container>
