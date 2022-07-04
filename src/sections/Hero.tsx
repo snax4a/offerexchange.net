@@ -1,6 +1,7 @@
 import Image from 'next/future/image';
 import { StaticImageData } from 'next/image';
 
+import Container from '@/components/Container';
 import ImageSlider from '@/components/ImageSlider';
 
 import appPlaceholder from '~/images/app-previews/app-placeholder.jpeg';
@@ -18,7 +19,7 @@ const sliderItems: Array<{ name: string; image: StaticImageData }> = [
 
 export default function Hero() {
   return (
-    <div className='bg-gray-50'>
+    <section className='bg-gray-50'>
       <div className='relative overflow-hidden'>
         <div className='absolute inset-y-0 h-full w-full' aria-hidden='true'>
           <div className='relative h-full'>
@@ -90,19 +91,19 @@ export default function Hero() {
         </div>
 
         <div className='relative pt-6 pb-16 sm:pb-24'>
-          <div className='mx-auto mt-16 max-w-7xl px-4 sm:mt-24 sm:px-6'>
-            <div className='text-center'>
-              <h1 className='text-4xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl'>
+          <Container className='mt-16 sm:mt-24'>
+            <div className='mx-auto max-w-md text-center md:max-w-3xl'>
+              <h1 className='text-3xl font-extrabold text-gray-900 sm:text-5xl md:text-6xl'>
                 <span className='block'>Platforma wymiany</span>
                 <span className='block text-secondary'>informacji handlowych</span>
               </h1>
-              <p className='mx-auto mt-3 max-w-md text-base text-gray-500 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl'>
+              <p className='mt-5 text-base text-gray-500 sm:text-lg  md:text-xl'>
                 Offer Exchange to rozwiązanie optymalizujące proces zakupów w Twojej
                 firmie. Z jego pomocą wyślesz zapytania ofertowe, zbierzesz i porównasz
                 oferty od handlowców oraz złożysz u nich zamówienia.
               </p>
             </div>
-          </div>
+          </Container>
         </div>
 
         <div className='relative'>
@@ -171,6 +172,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

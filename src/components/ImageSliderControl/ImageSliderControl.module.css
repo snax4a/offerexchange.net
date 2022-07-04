@@ -1,12 +1,11 @@
 .control {
-  @apply absolute bottom-10 right-11 z-30 flex select-none
-  flex-row rounded-lg border border-slate-700 bg-slate-800 text-white shadow-xl;
-  height: 48px;
+  @apply absolute bottom-6 right-6 z-30 flex h-10 select-none flex-row
+  rounded-lg border border-slate-700 bg-slate-800 text-white shadow-xl sm:bottom-10 sm:right-11 sm:h-12;
 }
 
 .leftControl,
 .rightControl {
-  @apply cursor-pointer px-9;
+  @apply cursor-pointer px-7 sm:px-9;
   transition: background-color 0.2s ease;
 }
 
