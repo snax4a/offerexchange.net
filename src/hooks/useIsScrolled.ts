@@ -1,18 +1,21 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
+import { useEventListener, useIsomorphicLayoutEffect } from 'usehooks-ts';
 
-export const useIsScrolled = (): boolean => {
+export const useIsScrolled = (minScroll = 0): boolean => {
   const [isScrolled, setIsScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
-    };
+  const handleScroll = () => {
+    const windowScrolled = window.scrollY > minScroll;
+    if (windowScrolled !== isScrolled) {
+      setIsScrolled(windowScrolled);
+    }
+  };
 
-    window.addEventListener('scroll', handleScroll);
+  useEventListener('scroll', handleScroll);
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
+  // Set isScrolled at the first client-side load
+  useIsomorphicLayoutEffect(() => {
+    handleScroll();
   }, []);
 
   return isScrolled;
