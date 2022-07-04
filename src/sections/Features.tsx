@@ -52,7 +52,10 @@ const FEATURES_DATA: Feature[] = [
 
 export default function Features() {
   return (
-    <section id='features' className='relative scroll-mt-16 bg-gray-50 py-8 lg:pb-20'>
+    <section
+      id='features'
+      className='relative scroll-mt-6 bg-gray-50 py-8 sm:scroll-mt-16 lg:pb-20'
+    >
       <Container>
         <SectionHeading
           heading='Jakie funkcje oferuje nasz produkt?'

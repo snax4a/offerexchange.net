@@ -25,7 +25,7 @@ export default function Pricing() {
     'flex min-h-[50px] items-center [&+li]:border-t border-slate-300/70 font-medium xl:min-h-[59px]';
 
   return (
-    <section id='pricing' className='mb-20 scroll-mt-20'>
+    <section id='pricing' className='mb-20 scroll-mt-10 sm:scroll-mt-20'>
       <Container>
         <SectionHeading
           className='lg:mb-16'

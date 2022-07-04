@@ -83,7 +83,7 @@ const accordionData: AccordionItem[] = [
 
 export default function FAQ() {
   return (
-    <section id='faq' className='scroll-mt-20 pb-16'>
+    <section id='faq' className='scroll-mt-10 pb-16 sm:scroll-mt-20'>
       <Container>
         <SectionHeading
           heading='Często zadawane pytania'
