@@ -37,11 +37,7 @@ export default function Header() {
               >
                 <span className='sr-only'>Strona główna</span>
                 <Logo className='h-6 w-44 text-9xl md:hidden md:h-7 lg:block xl:w-48' />
-                <SmallLogo
-                  className='hidden w-10 md:block lg:hidden'
-                  height='auto'
-                  width='auto'
-                />
+                <SmallLogo className='hidden h-7 w-10 md:block lg:hidden' />
               </UnstyledLink>
             </div>
 
