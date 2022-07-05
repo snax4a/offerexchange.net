@@ -10,12 +10,12 @@ export default function NotFoundPage() {
     <Page>
       <Seo templateTitle='Not Found' />
 
-      <section className='layout flex h-full flex-col items-center justify-center self-stretch pt-10 text-center text-black sm:pt-6'>
+      <section className='layout flex h-full flex-col items-center justify-center self-stretch pt-20 text-center text-black sm:pt-8'>
         <RiAlarmWarningFill
           size={60}
           className='drop-shadow-glow animate-flicker text-red-500'
         />
-        <h1 className='mt-8 text-4xl md:text-6xl md:leading-tight'>
+        <h1 className='mt-8 text-3xl md:text-6xl md:leading-tight'>
           Ups! Wygląda na to,
           <br />
           że ta strona nie istnieje
