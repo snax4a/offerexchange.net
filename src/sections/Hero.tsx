@@ -133,7 +133,7 @@ export default function Hero() {
             <div className='w-full flex-1 bg-gray-800' />
           </div>
           <div className='mx-auto max-w-7xl px-4 sm:px-6'>
-            <div className='flex items-center justify-center overflow-x-hidden'>
+            <div className='flex items-center justify-center overflow-x-hidden rounded-lg lg:rounded-3xl'>
               <ImageSlider showThumbnails={false}>
                 {sliderItems.map((slide, index) => (
                   <Image
