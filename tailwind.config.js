@@ -13,6 +13,7 @@ module.exports = {
       colors: {
         primary: 'rgb(var(--color-primary) / <alpha-value>)',
         secondary: 'rgb(var(--color-secondary) / <alpha-value>)',
+        focus: 'var(--color-focus)',
         dark: '#222222',
       },
       borderRadius: {

@@ -6,6 +6,7 @@
   /* #region  /**=========== Colors =========== */
   --color-primary: 17 20 45; /* #11142d */
   --color-secondary: 108 93 211; /* #6C5DD3 */
+  --color-focus: rgb(59 130 246 / 0.5); /* #3b82f680 */
   --tw-color-primary-50: 245 243 255;
   --tw-color-primary-100: 237 233 254;
   --tw-color-primary-200: 221 214 254;
