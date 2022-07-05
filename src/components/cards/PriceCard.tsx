@@ -26,7 +26,7 @@ export default function PriceCard({ data, isRecommended }: PriceCardProps) {
   return (
     <article
       className={clsx(
-        'relative rounded-xl border border-slate-300/70 bg-white px-7 text-center text-primary duration-150 lg:rounded-lg lg:px-0',
+        'relative rounded-xl border border-slate-300/70 bg-white px-7 text-center text-primary duration-150 lg:rounded-2xl lg:px-0',
         'hover:border-secondary/20 hover:bg-slate-100/70',
         {
           '!border-secondary lg:rounded-t-none': isRecommended,
