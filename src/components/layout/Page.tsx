@@ -25,8 +25,8 @@ export default function Page({ children }: PageProps) {
             <Header />
             <main className='mt-10 flex grow flex-col justify-around self-stretch sm:mt-16'>
               {children}
-              <Footer />
             </main>
+            <Footer />
           </div>
         </React.Suspense>
       </div>
