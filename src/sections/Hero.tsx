@@ -4,12 +4,12 @@ import { StaticImageData } from 'next/image';
 import Container from '@/components/Container';
 import ImageSlider from '@/components/ImageSlider';
 
-import offerListScreen from '~/images/app-previews/lista-ofert.jpeg';
-import ordersListScreen from '~/images/app-previews/lista-zamowien.jpeg';
-import inquiryListScreen from '~/images/app-previews/lista-zapytan-ofertowych.jpeg';
-import comparisonScreen from '~/images/app-previews/porownywarka-ofert-handlowych.jpeg';
-import addressesScreen from '~/images/app-previews/zarzadzanie-adresami.jpeg';
-import tradersScreen from '~/images/app-previews/zarzadzanie-handlowcami.jpeg';
+import offerListScreen from '~/images/app-previews/webp/lista-ofert.webp';
+import ordersListScreen from '~/images/app-previews/webp/lista-zamowien.webp';
+import inquiryListScreen from '~/images/app-previews/webp/lista-zapytan-ofertowych.webp';
+import comparisonScreen from '~/images/app-previews/webp/porownywarka-ofert-handlowych.webp';
+import addressesScreen from '~/images/app-previews/webp/zarzadzanie-adresami.webp';
+import tradersScreen from '~/images/app-previews/webp/zarzadzanie-handlowcami.webp';
 
 const sliderItems: Array<{ name: string; image: StaticImageData }> = [
   {
