@@ -1,6 +1,6 @@
 .control {
   @apply absolute bottom-6 right-6 z-30 flex h-10 select-none flex-row
-  rounded-lg border border-slate-700 bg-slate-800 text-white shadow-xl sm:bottom-10 sm:right-11 sm:h-12;
+  rounded-xl border border-slate-700 bg-slate-800 text-white shadow-xl sm:bottom-10 sm:right-11 sm:h-12;
 }
 
 .leftControl,

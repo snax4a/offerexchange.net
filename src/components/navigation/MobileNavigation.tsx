@@ -82,7 +82,7 @@ export default function MobileNavigation() {
                 <UnstyledLink
                   openNewTab={false}
                   href={ROUTES.REGISTER}
-                  className='flex w-full items-center justify-center rounded-md border border-transparent bg-secondary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700'
+                  className='flex w-full items-center justify-center rounded-xl border border-transparent bg-secondary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700'
                 >
                   Utwórz konto
                 </UnstyledLink>

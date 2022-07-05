@@ -96,7 +96,7 @@ export default function FAQ() {
               <Disclosure key={item.title}>
                 {({ open }) => (
                   <>
-                    <Disclosure.Button className='focus-visible:ring-seconrady flex w-full justify-between rounded-lg border border-secondary/20 bg-secondary/10 p-4 text-left text-sm font-medium text-secondary hover:bg-secondary/20 focus:outline-none focus-visible:ring focus-visible:ring-opacity-75'>
+                    <Disclosure.Button className='focus-visible:ring-seconrady flex w-full justify-between rounded-xl border border-secondary/20 bg-secondary/10 p-4 text-left text-sm font-medium text-secondary hover:bg-secondary/20 focus:outline-none focus-visible:ring focus-visible:ring-opacity-75'>
                       <span>{item.title}</span>
                       <ChevronUpIcon
                         className={clsx(
