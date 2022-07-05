@@ -27,7 +27,7 @@ export default function MobileNavigation() {
         <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
           <div className='px-5 pt-5 pb-6'>
             <div className='flex items-center justify-between'>
-              <UnstyledLink href={ROUTES.HOME}>
+              <UnstyledLink href={ROUTES.HOME} className='focus-visible:ring-0'>
                 <Logo className='w-44 text-9xl xl:w-48' height='auto' width='auto' />
               </UnstyledLink>
               <div className='-mr-2'>
