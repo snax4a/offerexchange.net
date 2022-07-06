@@ -1,6 +1,11 @@
 import { Popover, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
-import { Fragment, MutableRefObject, useRef } from 'react';
+import {
+  clearAllBodyScrollLocks,
+  disableBodyScroll,
+  enableBodyScroll,
+} from 'body-scroll-lock';
+import { Fragment, MutableRefObject, useEffect, useRef } from 'react';
 
 import { ROUTES } from '@/lib/constants';
 
@@ -38,19 +43,24 @@ interface MobileNavigationContentProps {
 
 function MobileNavigationContent({ close }: MobileNavigationContentProps) {
   const targetRef = useRef(null);
-  // const targetElement = targetRef.current;
+  const targetElement = targetRef.current;
 
   // Disable body scroll when the popover is open
-  // useEffect(() => {
-  //   if (targetElement != null) {
-  //     disableBodyScroll(targetElement, { reserveScrollBarGap: true });
-  //   }
+  useEffect(() => {
+    if (targetElement != null) {
+      disableBodyScroll(targetElement, { reserveScrollBarGap: true });
+    }
 
-  //   return () => {
-  //     if (targetElement) enableBodyScroll(targetElement);
-  //     clearAllBodyScrollLocks();
-  //   };
-  // }, [targetElement]);
+    return () => {
+      if (targetElement) enableBodyScroll(targetElement);
+      clearAllBodyScrollLocks();
+    };
+  }, [targetElement]);
+
+  const handleClose = () => {
+    clearAllBodyScrollLocks();
+    close();
+  };
 
   return (
     <div
@@ -61,7 +71,7 @@ function MobileNavigationContent({ close }: MobileNavigationContentProps) {
         <div className='flex items-center justify-between'>
           <UnstyledLink
             href={ROUTES.HOME}
-            onClick={() => close()}
+            onClick={handleClose}
             className='focus-visible:ring-0'
           >
             <Logo className='h-7 w-44 text-9xl' />
@@ -80,7 +90,7 @@ function MobileNavigationContent({ close }: MobileNavigationContentProps) {
               <UnstyledLink
                 key={item.name}
                 href={item.href}
-                onClick={() => close()}
+                onClick={handleClose}
                 className='-m-3 flex items-center rounded-lg p-2 hover:bg-gray-50 focus-visible:ring-inset sm:p-3'
               >
                 <div className='flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-secondary/90 text-white'>
@@ -101,7 +111,7 @@ function MobileNavigationContent({ close }: MobileNavigationContentProps) {
             <UnstyledLink
               key={item.name}
               href={item.href}
-              onClick={() => close()}
+              onClick={handleClose}
               className='whitespace-nowrap rounded-sm text-sm font-medium text-gray-900 hover:text-gray-700 focus-visible:!ring-offset-4 sm:text-base'
             >
               {item.name}
