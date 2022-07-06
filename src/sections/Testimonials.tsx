@@ -116,7 +116,7 @@ export default function Testimonials() {
           heading='Kilka miłych słów od pierwszych klientów...'
           subheading='Pracowaliśmy z niewielką grupą klientów korzystających z wczesnego dostępu, aby upewnić się że Offer Exchange jest dokładnie tym, czego potrzebują. Oto, co mieli do powiedzenia o gotowym produkcie.'
         />
-        <ul className='mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 px-4 lg:max-w-7xl lg:grid-cols-3 lg:px-8'>
+        <ul className='mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-7xl lg:grid-cols-3'>
           {testimonials
             .map((column) => column[0])
             .map((testimonial, testimonialIndex) => (

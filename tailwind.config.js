@@ -16,6 +16,9 @@ module.exports = {
         focus: 'var(--color-focus)',
         dark: '#222222',
       },
+      screens: {
+        tall: { raw: '(min-height: 800px)' },
+      },
       borderRadius: {
         '4xl': '2rem',
         '5xl': '3rem',

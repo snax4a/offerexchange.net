@@ -28,7 +28,7 @@ export default function Header() {
       })}
     >
       <Container>
-        <Popover className='relative'>
+        <Popover>
           <div className='flex items-center justify-between py-4 md:py-6'>
             <div className='flex lg:flex-1'>
               <UnstyledLink

@@ -22,18 +22,18 @@ export default function MobileNavigation() {
     >
       <Popover.Panel
         focus
-        className='absolute inset-x-0 top-0 z-50 origin-top-right transform py-2 pt-4 transition md:hidden'
+        className='absolute inset-x-0 top-0 z-50 origin-top-right transform transition md:hidden tall:p-4'
       >
         {({ close }) => (
-          <div className='divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
-            <div className='px-5 pt-5 pb-6'>
+          <div className='divide-y-2 divide-gray-100 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5'>
+            <div className='p-8 tall:p-6'>
               <div className='flex items-center justify-between'>
                 <UnstyledLink
                   href={ROUTES.HOME}
                   onClick={() => close()}
                   className='focus-visible:ring-0'
                 >
-                  <Logo className='w-44 text-9xl xl:w-48' height='auto' width='auto' />
+                  <Logo className='h-7 w-44 text-9xl' />
                 </UnstyledLink>
                 <div className='-mr-2'>
                   <Popover.Button className='inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:!outline-none focus-visible:ring focus-visible:ring-opacity-75'>
