@@ -17,7 +17,7 @@ module.exports = {
         dark: '#222222',
       },
       screens: {
-        tall: { raw: '(min-height: 845px)' },
+        tall: { raw: '(min-height: 900px)' },
       },
       borderRadius: {
         '4xl': '2rem',

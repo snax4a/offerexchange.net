@@ -60,7 +60,7 @@ function MobileNavigationContent({ close }: MobileNavigationContentProps) {
   return (
     <div
       ref={targetRef}
-      className='h-screen divide-y-2 divide-gray-100 overflow-y-auto rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 tall:h-auto'
+      className='h-screen divide-y-2 divide-gray-100 overflow-y-auto bg-white shadow-lg ring-1 ring-black ring-opacity-5 tall:h-auto tall:rounded-2xl'
     >
       <div className='p-8 pt-7 tall:p-6 tall:pt-5'>
         <div className='flex items-center justify-between'>
@@ -88,8 +88,8 @@ function MobileNavigationContent({ close }: MobileNavigationContentProps) {
                 onClick={() => close()}
                 className='-m-3 flex items-center rounded-lg p-2 hover:bg-gray-50 focus-visible:ring-inset sm:p-3'
               >
-                <div className='flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white'>
-                  <item.icon className='h-6 w-6' aria-hidden='true' />
+                <div className='flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-secondary/90 text-white'>
+                  <item.icon className='h-5 w-5' aria-hidden='true' />
                 </div>
                 <div className='ml-4 text-sm font-medium text-gray-900 sm:text-base'>
                   {item.name}
