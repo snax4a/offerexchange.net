@@ -1,11 +1,6 @@
 import { Popover, Transition } from '@headlessui/react';
 import { XIcon } from '@heroicons/react/outline';
-import {
-  clearAllBodyScrollLocks,
-  disableBodyScroll,
-  enableBodyScroll,
-} from 'body-scroll-lock';
-import { Fragment, MutableRefObject, useEffect, useRef } from 'react';
+import { Fragment, MutableRefObject, useRef } from 'react';
 
 import { ROUTES } from '@/lib/constants';
 
@@ -43,19 +38,19 @@ interface MobileNavigationContentProps {
 
 function MobileNavigationContent({ close }: MobileNavigationContentProps) {
   const targetRef = useRef(null);
-  const targetElement = targetRef.current;
+  // const targetElement = targetRef.current;
 
   // Disable body scroll when the popover is open
-  useEffect(() => {
-    if (targetElement != null) {
-      disableBodyScroll(targetElement, { reserveScrollBarGap: true });
-    }
+  // useEffect(() => {
+  //   if (targetElement != null) {
+  //     disableBodyScroll(targetElement, { reserveScrollBarGap: true });
+  //   }
 
-    return () => {
-      if (targetElement) enableBodyScroll(targetElement);
-      clearAllBodyScrollLocks();
-    };
-  }, [targetElement]);
+  //   return () => {
+  //     if (targetElement) enableBodyScroll(targetElement);
+  //     clearAllBodyScrollLocks();
+  //   };
+  // }, [targetElement]);
 
   return (
     <div
