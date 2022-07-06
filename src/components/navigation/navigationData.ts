@@ -1,11 +1,11 @@
 import {
-  ChartBarIcon,
-  CursorClickIcon,
-  DocumentReportIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  ViewGridIcon,
-} from '@heroicons/react/outline';
+  BsBarChartFill,
+  BsCartCheckFill,
+  BsChatTextFill,
+  BsFileTextFill,
+  BsPeopleFill,
+} from 'react-icons/bs';
+import { IoLocationSharp } from 'react-icons/io5';
 
 import { ROUTES } from '@/lib/constants';
 
@@ -27,37 +27,37 @@ export const featureItems: FeatureItem[] = [
     name: 'Wysyłanie zapytań',
     description: 'Wysyłaj zapytania ofertowe do swoich handlowców.',
     href: '#',
-    icon: ChartBarIcon,
+    icon: BsChatTextFill,
   },
   {
     name: 'Zbieranie ofert',
     description: 'System zbierze dla Ciebie oferty handlowców w jednym miejscu.',
     href: '#',
-    icon: CursorClickIcon,
+    icon: BsFileTextFill,
   },
   {
     name: 'Porównywanie ofert',
     description: 'Porównuj otrzymane oferty za pomocą porównywarki.',
     href: '#',
-    icon: ShieldCheckIcon,
+    icon: BsBarChartFill,
   },
   {
     name: 'Składanie zamówień',
     description: 'Powiadom handlowców o chęci zakupu produktów z ich ofert.',
     href: '#',
-    icon: ViewGridIcon,
+    icon: BsCartCheckFill,
   },
   {
     name: 'Zarządzanie handlowcami',
     description: 'Utwórz listę swoich handlowców i organizuj ich w grupach.',
     href: '#',
-    icon: RefreshIcon,
+    icon: BsPeopleFill,
   },
   {
     name: 'Zarządzanie adresami',
     description: 'Utwórz listę swoich adresów dostaw aby przyspieszyć składanie zapytań.',
     href: '#',
-    icon: DocumentReportIcon,
+    icon: IoLocationSharp,
   },
 ];
 
