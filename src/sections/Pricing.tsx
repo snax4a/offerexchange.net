@@ -71,11 +71,11 @@ function BillingIntervalSwitch({
   setBillingInterval,
 }: BillingIntervalSwitchProps) {
   const buttonClasses =
-    'm-1 whitespace-nowrap rounded-lg py-2 px-4 text-sm font-medium focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 sm:w-auto sm:px-8';
+    'm-1 whitespace-nowrap rounded-lg py-2 px-4 text-sm font-medium focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 grow w-auto sm:px-8';
 
   return (
     <div className='mb-12 flex justify-center'>
-      <div className='flex rounded-xl border border-secondary/20 bg-secondary/10 p-0.5'>
+      <div className='flex flex-wrap rounded-xl border border-secondary/20 bg-secondary/10 p-0.5'>
         <button
           onClick={() => setBillingInterval('month')}
           type='button'
