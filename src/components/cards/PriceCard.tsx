@@ -29,14 +29,14 @@ export default function PriceCard({ data, isRecommended }: PriceCardProps) {
         'relative rounded-xl border border-slate-300/70 bg-white px-7 text-center text-primary duration-150 lg:rounded-2xl lg:px-0',
         'hover:border-secondary/20 hover:bg-slate-100/70',
         {
-          '!border-secondary lg:rounded-t-none': isRecommended,
+          'border-t-0 !border-secondary lg:rounded-t-none': isRecommended,
         }
       )}
     >
       {isRecommended && (
         <div
           className={clsx(
-            '-mx-7 rounded-t-lg bg-secondary py-1 font-medium uppercase tracking-widest text-white lg:-mx-0',
+            '-mx-7 rounded-t-xl bg-secondary py-1 font-medium uppercase tracking-widest text-white lg:-mx-0 lg:rounded-t-2xl',
             'lg:absolute lg:-top-7 lg:-left-[1px] lg:-right-[1px]'
           )}
         >
