@@ -4,12 +4,12 @@ import SectionHeading from '@/components/SectionHeading';
 
 import { Feature } from '@/types';
 
-import featureIcon1 from '~/images/features/feature-icon-1.png';
-import featureIcon2 from '~/images/features/feature-icon-2.png';
-import featureIcon3 from '~/images/features/feature-icon-3.png';
-import featureIcon4 from '~/images/features/feature-icon-4.png';
-import featureIcon5 from '~/images/features/feature-icon-5.png';
-import featureIcon6 from '~/images/features/feature-icon-6.png';
+import featureIcon3 from '~/images/features/webp/porównywarka-ofert-handlowych.webp';
+import featureIcon4 from '~/images/features/webp/składanie-zamówień.webp';
+import featureIcon1 from '~/images/features/webp/wysyłanie-zapytań-ofertowych.webp';
+import featureIcon6 from '~/images/features/webp/zarządzanie-adresami.webp';
+import featureIcon5 from '~/images/features/webp/zarządzanie-handlowcami.webp';
+import featureIcon2 from '~/images/features/webp/zbieranie-ofert.webp';
 
 const FEATURES_DATA: Feature[] = [
   {
@@ -61,9 +61,17 @@ export default function Features() {
           heading='Jakie funkcje oferuje nasz produkt?'
           subheading='Główne funkcje są wyróżnione poniżej'
         />
-        <div className='grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2'>
+        <div className='grid grid-cols-1 gap-16 md:grid-cols-1'>
           {FEATURES_DATA.map((feature, index) => (
-            <FeatureCard feature={feature} key={index} />
+            <FeatureCard
+              key={index}
+              feature={feature}
+              withArrow={index !== FEATURES_DATA.length - 1}
+              type={index % 2 === 0 ? 'right' : 'left'}
+              arrowClassNames={
+                index === FEATURES_DATA.length - 2 ? 'rotate-[90deg]' : undefined
+              }
+            />
           ))}
         </div>
       </Container>

@@ -1,26 +1,56 @@
-import NextImage from '@/components/NextImage';
+import clsx from 'clsx';
+import Image from 'next/future/image';
+
+import clsxm from '@/lib/clsxm';
 
 import { Feature } from '@/types';
 
 interface FeatureCardProps {
   feature: Feature;
+  type?: 'left' | 'right';
+  withArrow?: boolean;
+  arrowClassNames?: string;
 }
 
-export default function FeatureCard({ feature }: FeatureCardProps) {
+export default function FeatureCard({
+  feature,
+  type = 'left',
+  withArrow,
+  arrowClassNames,
+}: FeatureCardProps) {
   return (
-    <div className='flex gap-6 lg:gap-8'>
-      <div>
-        <NextImage
-          useSkeleton
-          className='w-18 shrink-0 md:w-24'
-          src={feature.image}
-          alt={feature.heading}
-          layout='fixed'
+    <div className='flex flex-col items-center justify-center gap-6 lg:flex-row lg:gap-16'>
+      <Image
+        className={clsx('max-w-72 max-h-44 w-auto shrink-0 lg:max-h-96', {
+          'lg:order-first': type === 'left',
+          'lg:order-last': type === 'right',
+        })}
+        src={feature.image}
+        alt={feature.heading}
+      />
+      {withArrow && (
+        <div
+          className={clsxm(
+            'hidden lg:block',
+            'dashed-arrow relative -bottom-24 transform',
+            {
+              'rotate-[115deg] scale-y-[-1]': type === 'left',
+              'right-0 order-2 rotate-[55deg]': type === 'right',
+            },
+            arrowClassNames
+          )}
         />
-      </div>
-      <div className=''>
-        <h4 className='text-lg font-bold text-primary'>{feature.heading}</h4>
-        <p className='my-4 text-base font-light text-slate-700'>{feature.text}</p>
+      )}
+      <div
+        className={clsx('max-w-xs text-center lg:max-w-lg', {
+          'lg:text-right': type === 'right',
+          'lg:text-left': type === 'left',
+        })}
+      >
+        <h4 className='text-xl font-bold text-primary md:text-3xl'>{feature.heading}</h4>
+        <p className='my-4 text-base font-light text-slate-700 md:text-xl'>
+          {feature.text}
+        </p>
       </div>
     </div>
   );
