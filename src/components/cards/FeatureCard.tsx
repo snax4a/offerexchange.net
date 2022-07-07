@@ -19,9 +19,9 @@ export default function FeatureCard({
   arrowClassNames,
 }: FeatureCardProps) {
   return (
-    <div className='flex flex-col items-center justify-center gap-6 lg:flex-row lg:gap-16'>
+    <div className='flex flex-col items-center justify-center gap-6 lg:flex-row lg:gap-8'>
       <Image
-        className={clsx('max-w-72 max-h-44 w-auto shrink-0 lg:max-h-96', {
+        className={clsx('h-auto max-h-44 w-auto lg:max-h-[400px]', {
           'lg:order-first': type === 'left',
           'lg:order-last': type === 'right',
         })}
@@ -32,10 +32,10 @@ export default function FeatureCard({
         <div
           className={clsxm(
             'hidden lg:block',
-            'dashed-arrow relative -bottom-24 transform',
+            'dashed-arrow relative transform [&::before]:-right-64 [&::before]:-bottom-4',
             {
-              'rotate-[115deg] scale-y-[-1]': type === 'left',
-              'right-0 order-2 rotate-[55deg]': type === 'right',
+              'rotate-[80deg] scale-y-[-1] [&::before]:-bottom-0': type === 'left',
+              'right-0 order-2 rotate-[90deg]': type === 'right',
             },
             arrowClassNames
           )}

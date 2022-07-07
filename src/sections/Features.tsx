@@ -61,7 +61,7 @@ export default function Features() {
           heading='Jakie funkcje oferuje nasz produkt?'
           subheading='Główne funkcje są wyróżnione poniżej'
         />
-        <div className='grid grid-cols-1 gap-16 md:grid-cols-1'>
+        <div className='grid grid-cols-1 gap-16 md:grid-cols-1 lg:gap-32'>
           {FEATURES_DATA.map((feature, index) => (
             <FeatureCard
               key={index}
@@ -69,7 +69,9 @@ export default function Features() {
               withArrow={index !== FEATURES_DATA.length - 1}
               type={index % 2 === 0 ? 'right' : 'left'}
               arrowClassNames={
-                index === FEATURES_DATA.length - 2 ? 'rotate-[90deg]' : undefined
+                index === FEATURES_DATA.length - 2
+                  ? 'rotate-[112deg] [&:before]:-right-[280px]'
+                  : undefined
               }
             />
           ))}
