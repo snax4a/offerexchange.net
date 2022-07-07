@@ -56,14 +56,6 @@
     @apply h-screen;
   }
 
-  @supports (-webkit-touch-callout: none) {
-    html,
-    body,
-    #__next {
-      height: -webkit-fill-available;
-    }
-  }
-
   a {
     @apply ring-offset-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75;
   }
