@@ -5,7 +5,7 @@ import {
   disableBodyScroll,
   enableBodyScroll,
 } from 'body-scroll-lock';
-import { Fragment, MutableRefObject, useEffect, useRef } from 'react';
+import { Fragment, MutableRefObject, useLayoutEffect, useRef } from 'react';
 
 import { ROUTES } from '@/lib/constants';
 
@@ -46,7 +46,7 @@ function MobileNavigationContent({ close }: MobileNavigationContentProps) {
   const targetElement = targetRef.current;
 
   // Disable body scroll when the popover is open
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (targetElement != null) {
       disableBodyScroll(targetElement, { reserveScrollBarGap: true });
     }
