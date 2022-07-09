@@ -104,35 +104,40 @@ export default function Hero() {
           <div className='mt-8 grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5'>
             <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1'>
               <Image
-                className='h-12'
+                height={48}
+                width={105}
                 src='/images/customers/tuple-logo-gray-400.svg'
                 alt='Tuple'
               />
             </div>
             <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1'>
               <Image
-                className='h-12'
+                height={48}
+                width={138}
                 src='/images/customers/mirage-logo-gray-400.svg'
                 alt='Mirage'
               />
             </div>
             <div className='col-span-1 flex justify-center md:col-span-2 lg:col-span-1'>
               <Image
-                className='h-12'
+                height={48}
+                width={127}
                 src='/images/customers/statickit-logo-gray-400.svg'
                 alt='StaticKit'
               />
             </div>
             <div className='col-span-1 flex justify-center md:col-span-3 lg:col-span-1'>
               <Image
-                className='h-12'
+                height={48}
+                width={158}
                 src='/images/customers/transistor-logo-gray-400.svg'
                 alt='Transistor'
               />
             </div>
             <div className='col-span-2 flex justify-center md:col-span-3 lg:col-span-1'>
               <Image
-                className='h-12'
+                height={48}
+                width={180}
                 src='/images/customers/workcation-logo-gray-400.svg'
                 alt='Workcation'
               />
