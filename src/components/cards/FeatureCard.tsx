@@ -21,12 +21,13 @@ export default function FeatureCard({
   return (
     <div className='flex flex-col items-center justify-center gap-6 lg:flex-row lg:gap-8'>
       <Image
-        className={clsx('h-auto max-h-44 w-auto lg:max-h-[400px]', {
+        className={clsx('h-auto max-h-44 w-auto lg:max-h-[280px]', {
           'lg:order-first': type === 'left',
           'lg:order-last': type === 'right',
         })}
         src={feature.image}
         alt={feature.heading}
+        quality={100}
       />
       {withArrow && (
         <div

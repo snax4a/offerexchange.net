@@ -61,7 +61,7 @@ export default function Features() {
           heading='Jakie funkcje oferuje nasz produkt?'
           subheading='Główne funkcje są wyróżnione poniżej'
         />
-        <div className='grid grid-cols-1 gap-16 md:grid-cols-1 lg:gap-32'>
+        <div className='mt-16 grid grid-cols-1 gap-16 md:grid-cols-1 lg:mt-32 lg:gap-24'>
           {FEATURES_DATA.map((feature, index) => (
             <FeatureCard
               key={index}
