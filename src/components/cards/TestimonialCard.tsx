@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from 'next/image';
+import { StaticImageData } from 'next/image';
 
 export interface TestimonialAuthor {
   name: string;
@@ -26,7 +26,8 @@ export default function Testimonial({ author, children }: TestimonialProps) {
       </blockquote>
       <figcaption className='mt-6 flex items-center'>
         <div className='relative h-12 w-12 overflow-hidden rounded-full bg-slate-50'>
-          <Image src={author.image} alt='' />
+          {/* <Image src={author.image} alt='' /> */}
+          <div className='h-12 w-12 rounded-full bg-gray-300' />
         </div>
         <div className='ml-4'>
           <div className='text-base font-medium leading-6 tracking-tight text-slate-900'>
