@@ -28,3 +28,12 @@ export function openGraph({
 export const formatPrice = (number: number, lang: string, currency: string) => {
   return new Intl.NumberFormat(lang, { style: 'currency', currency }).format(number);
 };
+
+export const escapeHtml = (unsafe: string) => {
+  return unsafe
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+};

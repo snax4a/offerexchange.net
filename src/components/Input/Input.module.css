@@ -1,0 +1,43 @@
+.root {
+  @apply relative flex w-full items-center rounded-xl;
+}
+
+.input {
+  @apply h-full w-full appearance-none rounded-xl bg-transparent py-3.5 px-4 text-sm font-medium text-primary transition duration-300 ease-in-out;
+}
+
+.input:focus {
+  @apply outline-none;
+}
+
+.normal {
+  @apply border bg-gray-100;
+}
+
+.normal:not(.error) {
+  @apply border-gray-300;
+}
+
+.normal:not(.error):focus-visible {
+  @apply border-secondary;
+}
+
+.solid {
+  @apply border border-gray-100 bg-gray-100 focus:border-gray-200;
+}
+
+.outline {
+  @apply border border-gray-100 focus:border-gray-200;
+}
+
+.line {
+  @apply rounded-none border-b border-gray-100 px-0 focus:border-gray-200;
+}
+
+.disabled {
+  @apply cursor-not-allowed bg-gray-100;
+}
+
+.error {
+  @apply border-red-400;
+}

@@ -1,0 +1,35 @@
+.input {
+  @apply absolute opacity-0;
+}
+
+.input + label {
+  @apply relative inline-flex cursor-pointer items-center whitespace-nowrap p-0;
+}
+
+.input + label:before {
+  content: '';
+  @apply mr-2.5 inline-flex h-5 w-5 shrink-0 rounded border-2 border-gray-300 bg-white;
+}
+
+.input:focus + label:before {
+  @apply border-secondary;
+}
+
+.input:checked + label:before {
+  @apply border-secondary bg-secondary;
+}
+
+.input:disabled + label {
+  @apply cursor-auto text-primary;
+}
+
+.input:disabled + label:before {
+  @apply cursor-not-allowed border-gray-300 bg-gray-200 shadow-none;
+}
+
+.input:checked + label:after {
+  content: '';
+  box-shadow: 2px 0 0 #ffffff, 4px 0 0 #ffffff, 4px -2px 0 #ffffff, 4px -4px 0 #ffffff,
+    4px -6px 0 #ffffff, 4px -8px 0 #ffffff;
+  @apply absolute left-[5px] h-0.5 w-0.5 shrink-0 rotate-45 bg-white;
+}

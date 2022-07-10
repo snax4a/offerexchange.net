@@ -30,6 +30,14 @@ module.exports = {
         lg: '0 8px 15px rgb(15 23 42 / 0.08), 0 3px 6px rgb(15 23 42 / 0.08)',
         xl: '2px 11px 16px rgb(15 23 42 / 0.17), 0 1px 6px rgb(15 23 42 / 0.17), 3px 23px 24px rgb(15 23 42 / 0.17)',
       },
+      variants: {
+        extend: {
+          ringWidth: ['focus-visible'],
+          ringColor: ['focus-visible'],
+          ringOffsetWidth: ['focus-visible'],
+          ringOffsetColor: ['focus-visible'],
+        },
+      },
       keyframes: {
         flicker: {
           '0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': {
@@ -57,5 +65,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
+  plugins: [require('@tailwindcss/typography')],
 };

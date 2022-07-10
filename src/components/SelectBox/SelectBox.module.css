@@ -1,0 +1,32 @@
+.button {
+  @apply border-1 bg-input relative w-full cursor-default rounded-2xl text-left text-sm font-semibold;
+}
+
+.button:not(.error) {
+  @apply border-gray-100;
+}
+
+.button:focus,
+.optionContainer:focus {
+  @apply outline-none;
+}
+
+.button:focus,
+.open {
+  @apply !border-secondary;
+}
+
+.error {
+  @apply border-red;
+}
+
+.optionContainer {
+  @apply border-1 bg-input absolute z-50 mt-2 max-h-60 w-full overflow-auto rounded-2xl border-gray-100 text-base shadow-sm;
+}
+
+@screen sm {
+  .button,
+  .optionContainer {
+    @apply text-sm;
+  }
+}

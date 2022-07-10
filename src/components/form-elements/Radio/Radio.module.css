@@ -1,0 +1,37 @@
+.input:checked,
+.input:not(:checked) {
+  @apply absolute hidden;
+  left: -9999px;
+}
+
+.input:checked + label,
+.input:not(:checked) + label {
+  @apply relative cursor-pointer pl-6;
+  line-height: 18px;
+}
+
+.input:checked + label:before,
+.input:not(:checked) + label:before {
+  content: '';
+  @apply absolute top-0 left-0 h-[18px] w-[18px] rounded-full border-2 border-gray-200 bg-white;
+}
+
+.input:checked + label:after,
+.input:not(:checked) + label:after {
+  content: '';
+  @apply absolute top-1 left-1 h-2.5 w-2.5 rounded-full bg-secondary;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.input:not(:checked) + label:after {
+  @apply scale-0 opacity-0;
+}
+
+.input:checked + label:before {
+  @apply border-secondary;
+}
+
+.input:checked + label:after {
+  @apply scale-100 opacity-100;
+}
