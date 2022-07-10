@@ -7,6 +7,7 @@ import { ROUTES } from '@/lib/constants';
 
 import Container from '@/components/Container';
 import ButtonLink from '@/components/links/ButtonLink';
+import PrimaryLink from '@/components/links/PrimaryLink';
 import SectionHeading from '@/components/SectionHeading';
 
 interface AccordionItem {
@@ -18,53 +19,57 @@ interface AccordionItem {
 const accordionData: AccordionItem[] = [
   {
     isExpanded: false,
-    title: 'How much does it cost to be a credit card merchant?',
+    title: 'Jak długo mogę używać wersji darmowej?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA Places. I just
-        wanted to tell you that everything worked out perfectly with all the bookings and
-        also your booking was very quick and professional. I hope I have the opportunity
-        to re-visit South Africa soon, I will then make my bookings with your company
-        again. I will also recommend
+        Jak długo chcesz, nie ograniczamy czasowo wersji darmowej. Wersja darmowa posiada
+        inne limity, które możesz sprawdzić w sekcji{' '}
+        <PrimaryLink href={ROUTES.PRICING}>Plany cenowe Offer Exchange</PrimaryLink>.
       </div>
     ),
   },
   {
     isExpanded: true,
-    title: 'How can I open a merchant account?',
+    title: 'Czy handlowiec, któremu wysyłam zapytanie potrzebuje konta w aplikacji?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA Places. I just
-        wanted to tell you that everything worked out perfectly with all the bookings and
-        also your booking was very quick and professional. I hope I have the opportunity
-        to re-visit South Africa soon, I will then make my bookings with your company
-        again. I will also recommend
+        Nie, handlowiec otrzymuje na podany przez Ciebie adres mailowy specjalny link do
+        naszej aplikacji. Pod tym linkiem, przy pomocy interaktywnego formularza będzie
+        mógł złożyć dla Ciebie ofertę.
+      </div>
+    ),
+  },
+  {
+    isExpanded: true,
+    title: 'Czy handlowiec, będzie mógł się ze mną jakoś skontaktować?',
+    contents: (
+      <div>
+        Wraz z zapytaniem handlowiec otrzyma też Twoje dane kontaktowe takie jak: imię,
+        nazwisko, nazwa firmy, adres e-mail oraz numer telefonu. W razie potrzeby te dane
+        pozwolą mu się z Tobą skontaktować.
       </div>
     ),
   },
   {
     isExpanded: false,
-    title: 'How long does the application take?',
+    title: 'Czy mogę się zarejestrować bez podawania danych karty kredytowej?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA Places. I just
-        wanted to tell you that everything worked out perfectly with all the bookings and
-        also your booking was very quick and professional. I hope I have the opportunity
-        to re-visit South Africa soon, I will then make my bookings with your company
-        again. I will also recommend
+        Oczywiście, nie wymagamy podawania danych twojej karty kredytowej przy
+        rejestracji. Karta kredytowa będzie wymagana dopiero w przypadku zakupu licencji
+        cyklicznej.
       </div>
     ),
   },
   {
     isExpanded: false,
-    title: 'Can I make payment outside of Hong Kong?',
+    title: 'Jak aktualnie wygląda proces zakupu planów płatnych?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA Places. I just
-        wanted to tell you that everything worked out perfectly with all the bookings and
-        also your booking was very quick and professional. I hope I have the opportunity
-        to re-visit South Africa soon, I will then make my bookings with your company
-        again. I will also recommend
+        Pracujemy nad automatyzacją tego procesu, plany płatne sprzedawane są na podstawie
+        zamówienia złożonego przez formularz kontaktowy. Wystarczy, że w wiadomości podasz
+        nam nazwę planu, który wybrałeś oraz dane do faktury, a my zajmiemy się resztą
+        najszybciej, jak to możliwe.
       </div>
     ),
   },
@@ -118,7 +123,7 @@ export default function FAQ() {
                       leaveFrom='transform scale-100 opacity-100'
                       leaveTo='transform scale-95 opacity-0'
                     >
-                      <Disclosure.Panel className='px-4 pt-4 pb-2 text-sm text-slate-700'>
+                      <Disclosure.Panel className='px-4 py-2 text-sm text-slate-700'>
                         {item.contents}
                       </Disclosure.Panel>
                     </Transition>
