@@ -26,37 +26,37 @@ export const featureItems: FeatureItem[] = [
   {
     name: 'Wysyłanie zapytań',
     description: 'Wysyłaj zapytania ofertowe do swoich handlowców.',
-    href: '#',
+    href: ROUTES.FEATURES,
     icon: BsChatTextFill,
   },
   {
     name: 'Zbieranie ofert',
     description: 'System zbierze dla Ciebie oferty handlowców w jednym miejscu.',
-    href: '#',
+    href: ROUTES.FEATURES,
     icon: BsFileTextFill,
   },
   {
     name: 'Porównywanie ofert',
     description: 'Porównuj otrzymane oferty za pomocą porównywarki.',
-    href: '#',
+    href: ROUTES.FEATURES,
     icon: BsBarChartFill,
   },
   {
     name: 'Składanie zamówień',
     description: 'Powiadom handlowców o chęci zakupu produktów z ich ofert.',
-    href: '#',
+    href: ROUTES.FEATURES,
     icon: BsCartCheckFill,
   },
   {
     name: 'Zarządzanie handlowcami',
     description: 'Utwórz listę swoich handlowców i organizuj ich w grupach.',
-    href: '#',
+    href: ROUTES.FEATURES,
     icon: BsPeopleFill,
   },
   {
     name: 'Zarządzanie adresami',
     description: 'Utwórz listę swoich adresów dostaw aby przyspieszyć składanie zapytań.',
-    href: '#',
+    href: ROUTES.FEATURES,
     icon: IoLocationSharp,
   },
 ];
@@ -72,11 +72,11 @@ export const navigationItems: NavigationItem[] = [
     description: 'Poznaj odpowiedzi na często zadawane pytania.',
     href: ROUTES.FAQ,
   },
-  {
-    name: 'O nas',
-    description: 'Dowiedz się więcej o naszej firmie.',
-    href: ROUTES.ABOUT,
-  },
+  // {
+  //   name: 'O nas',
+  //   description: 'Dowiedz się więcej o naszej firmie.',
+  //   href: ROUTES.ABOUT,
+  // },
   {
     name: 'Centrum pomocy',
     description:

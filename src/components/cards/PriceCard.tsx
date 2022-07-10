@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 
+import { ROUTES } from '@/lib/constants';
 import { formatPrice } from '@/lib/helper';
 
 import ButtonLink from '@/components/links/ButtonLink';
@@ -78,7 +79,7 @@ export default function PriceCard({ data, isRecommended }: PriceCardProps) {
       </ul>
 
       <footer className='pb-8'>
-        <ButtonLink href='#' variant='outline' className='text-base'>
+        <ButtonLink href={ROUTES.SUPPORT} variant='outline' className='text-base'>
           Wybierz plan
         </ButtonLink>
       </footer>

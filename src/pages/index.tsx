@@ -6,7 +6,6 @@ import FAQ from '@/sections/FAQ';
 import Features from '@/sections/Features';
 import Hero from '@/sections/Hero';
 import Pricing from '@/sections/Pricing';
-import Stats from '@/sections/Stats';
 import Testimonials from '@/sections/Testimonials';
 
 export default function HomePage() {
@@ -16,7 +15,7 @@ export default function HomePage() {
       <Hero />
       <Features />
       <Pricing />
-      <Stats />
+      {/* <Stats /> */}
       <Testimonials />
       <FAQ />
     </Page>

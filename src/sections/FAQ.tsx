@@ -3,6 +3,8 @@ import { ChevronUpIcon } from '@heroicons/react/solid';
 import clsx from 'clsx';
 import React from 'react';
 
+import { ROUTES } from '@/lib/constants';
+
 import Container from '@/components/Container';
 import ButtonLink from '@/components/links/ButtonLink';
 import SectionHeading from '@/components/SectionHeading';
@@ -131,7 +133,7 @@ export default function FAQ() {
             <p className='text-slate-700'>
               W każdej chwili możesz się z nami skontaktować
             </p>
-            <ButtonLink href='/support'>Zadaj nam pytanie</ButtonLink>
+            <ButtonLink href={ROUTES.SUPPORT}>Zadaj nam pytanie</ButtonLink>
           </div>
         </div>
       </Container>

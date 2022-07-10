@@ -49,7 +49,7 @@ export default function Footer() {
               <FooterLink isHeader={true}>Ważne linki</FooterLink>
               <FooterLink href={ROUTES.RULES}>Regulamin aplikacji</FooterLink>
               <FooterLink href={ROUTES.PRIVACY_POLICY}>Polityka prywatności</FooterLink>
-              <FooterLink href={ROUTES.ABOUT}>O naszej firmie</FooterLink>
+              {/* <FooterLink href={ROUTES.ABOUT}>O naszej firmie</FooterLink> */}
             </div>
 
             <div className='flex flex-col sm:col-start-2 xl:col-start-4'>

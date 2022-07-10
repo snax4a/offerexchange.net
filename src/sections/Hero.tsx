@@ -97,7 +97,8 @@ export default function Hero() {
         </div>
       </div>
       <div className='bg-gray-800'>
-        <div className='mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8'>
+        <div className='py-8 lg:py-14' />
+        {/* <div className='mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8'>
           <h2 className='text-center text-sm font-semibold uppercase tracking-wide text-gray-400'>
             Wykorzystywana przez ponad 40 przyszłościowo myślących firm
           </h2>
@@ -143,7 +144,7 @@ export default function Hero() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
