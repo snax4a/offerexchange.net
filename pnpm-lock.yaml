@@ -34,6 +34,7 @@ specifiers:
   keen-slider: 6.7.0
   lint-staged: 13.0.3
   next: 12.2.1
+  next-plausible: ^3.2.0
   next-sitemap: 3.1.10
   nodemailer: 6.7.7
   postcss: 8.4.14
@@ -65,6 +66,7 @@ dependencies:
   focus-visible: 5.2.0
   keen-slider: 6.7.0
   next: 12.2.1_biqbaboplfbrettd7655fr4n2y
+  next-plausible: 3.2.0_mhihrgpmhoktude7gn4rdcr2ka
   nodemailer: 6.7.7
   postcss-focus-visible: 7.0.0_postcss@8.4.14
   react: 18.2.0
@@ -5886,6 +5888,18 @@ packages:
   /neo-async/2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
     dev: true
+
+  /next-plausible/3.2.0_mhihrgpmhoktude7gn4rdcr2ka:
+    resolution: {integrity: sha512-OlYcLXBG3kKd/fKMpm8SZ5IkUKSFm1/8t7cv6e5bewIqlpdZpdWuSrjbdJpbmutb2KPLXHzilKp09zmDGjy9KQ==}
+    peerDependencies:
+      next: ^11.1.0 || ^12.0.0
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      next: 12.2.1_biqbaboplfbrettd7655fr4n2y
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
 
   /next-sitemap/3.1.10_uw7uoavcxeh3hnzgv7fkcrp3ii:
     resolution: {integrity: sha512-IslH1nxY5p/3+cdjFiXDFSfchUJ0R+Flvm/T/01y7xokA/hd4rnuU+Jh0ZEZ92j7zBgwPUp1KTg0B41zuSpVHw==}
