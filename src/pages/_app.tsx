@@ -11,7 +11,7 @@ function OfferExchange({ Component, pageProps }: AppProps) {
       selfHosted
       trackOutboundLinks
       domain='offerexchange.net'
-      customDomain='analytics.offerexchange.net'
+      customDomain='https://analytics.offerexchange.net'
       enabled={process.env.NODE_ENV === 'production'}
     >
       <Component {...pageProps} />;
