@@ -1,3 +1,5 @@
+export const IS_PROD = process.env.NODE_ENV === 'production';
+
 export const ROUTES = {
   HOME: '/',
   FEATURES: '/#features',

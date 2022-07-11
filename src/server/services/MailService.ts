@@ -2,6 +2,8 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 import SMTPTransport from 'nodemailer/lib/smtp-transport';
 
+import { IS_PROD } from '@/lib/constants';
+
 export class MailService {
   private transporter;
 
@@ -14,11 +16,16 @@ export class MailService {
     this.transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST,
       port: parseInt(process.env.SMTP_PORT, 10),
-      secure: process.env.NODE_ENV === 'production',
+      secure: IS_PROD,
       auth: {
         user: process.env.SMTP_USER,
         pass: process.env.SMTP_PASSWORD,
       },
+      ...(IS_PROD && {
+        tls: {
+          ciphers: 'SSLv3',
+        },
+      }),
     });
   }
 

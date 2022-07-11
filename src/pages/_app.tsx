@@ -5,6 +5,8 @@ import 'focus-visible';
 import 'keen-slider/keen-slider.min.css';
 import '@/styles/globals.css';
 
+import { IS_PROD } from '@/lib/constants';
+
 function OfferExchange({ Component, pageProps }: AppProps) {
   return (
     <PlausibleProvider
@@ -12,7 +14,7 @@ function OfferExchange({ Component, pageProps }: AppProps) {
       trackOutboundLinks
       domain='offerexchange.net'
       customDomain='https://analytics.offerexchange.net'
-      enabled={process.env.NODE_ENV === 'production'}
+      enabled={IS_PROD}
     >
       <Component {...pageProps} />;
     </PlausibleProvider>
