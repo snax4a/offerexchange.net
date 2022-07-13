@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Image from 'next/future/image';
 import React, { useMemo, useState } from 'react';
 
 import { useIsDesktop } from '@/hooks/useMediaQuery';
@@ -71,7 +72,7 @@ function BillingIntervalSwitch({
   setBillingInterval,
 }: BillingIntervalSwitchProps) {
   const buttonClasses =
-    'm-1 whitespace-nowrap rounded-lg py-2 px-4 text-sm font-medium focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 grow w-auto sm:px-8';
+    'm-1 whitespace-nowrap rounded-lg py-2 px-4 text-sm font-medium focus:outline-none focus-visible:ring focus-visible:ring-opacity-75 grow w-auto sm:px-8 border border-transparent';
 
   return (
     <div className='mb-12 flex justify-center'>
@@ -82,7 +83,7 @@ function BillingIntervalSwitch({
           className={clsx(
             buttonClasses,
             selectedInterval === 'month'
-              ? 'border border-secondary/50 bg-secondary text-white shadow-sm'
+              ? 'bg-secondary text-white shadow-sm'
               : 'text-primary'
           )}
         >
@@ -92,13 +93,19 @@ function BillingIntervalSwitch({
           onClick={() => setBillingInterval('year')}
           type='button'
           className={clsx(
+            'relative',
             buttonClasses,
-            selectedInterval === 'year'
-              ? 'border border-secondary/50 bg-secondary text-white shadow-sm'
-              : 'text-primary'
+            selectedInterval === 'year' ? 'bg-secondary text-white ' : 'text-primary'
           )}
         >
           Rozliczenie roczne
+          <Image
+            src='/images/3-months-extra.webp'
+            width={170}
+            height={79}
+            alt='3 miesiące gratis'
+            className='absolute -right-[147px] bottom-0 hidden rotate-[15deg] transform md:block'
+          />
         </button>
       </div>
     </div>
