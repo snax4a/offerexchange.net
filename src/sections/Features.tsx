@@ -14,7 +14,7 @@ import featureIcon2 from '~/images/features/webp/zbieranie-ofert.webp';
 const FEATURES_DATA: Feature[] = [
   {
     image: featureIcon1,
-    heading: 'Wysyłanine zapytań',
+    heading: 'Wysyłanie zapytań',
     text: 'W łatwy sposób wyślesz zapytania ofertowe na poszczególne produkty do zdefiniowanych wcześniej grup handlowców.',
     href: '#',
   },
