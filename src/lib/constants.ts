@@ -1,5 +1,11 @@
 export const IS_PROD = process.env.NODE_ENV === 'production';
 
+/**
+ * Console log greeting message
+ * @see _app.tsx
+ */
+export const sayHelloFlag = IS_PROD;
+
 export const ROUTES = {
   HOME: '/',
   FEATURES: '/#features',
