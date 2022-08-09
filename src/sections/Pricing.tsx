@@ -39,7 +39,7 @@ export default function Pricing() {
         />
         <div className='grid grid-cols-1 justify-center lg:mt-24 lg:grid-cols-[250px_1fr]'>
           {isDesktop && (
-            <ul className='mt-[138px] text-sm xl:mt-[142px] xl:text-base'>
+            <ul className='mt-[164px] text-sm xl:mt-[168px] xl:text-base'>
               <li className={listItemClasses}>Liczba zapytań</li>
               <li className={listItemClasses}>Liczba odbiorców zapytania</li>
               <li className={listItemClasses}>Liczba produktów w zapytaniu</li>
