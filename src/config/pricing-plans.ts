@@ -12,7 +12,7 @@ export const pricingPlanData: PricingPlan[] = [
     metadata: {
       numberOfInquiries: 5,
       numberOfRecipients: 5,
-      numberOfProducts: 15,
+      numberOfProducts: 10,
       numberOfOffers: Infinity,
       numberOfOrders: Infinity,
     },
@@ -27,7 +27,7 @@ export const pricingPlanData: PricingPlan[] = [
     metadata: {
       numberOfInquiries: 5,
       numberOfRecipients: 5,
-      numberOfProducts: 15,
+      numberOfProducts: 10,
       numberOfOffers: Infinity,
       numberOfOrders: Infinity,
     },
@@ -42,7 +42,7 @@ export const pricingPlanData: PricingPlan[] = [
     metadata: {
       numberOfInquiries: 20,
       numberOfRecipients: 10,
-      numberOfProducts: 30,
+      numberOfProducts: 20,
       numberOfOffers: Infinity,
       numberOfOrders: Infinity,
     },
@@ -57,7 +57,7 @@ export const pricingPlanData: PricingPlan[] = [
     metadata: {
       numberOfInquiries: 20,
       numberOfRecipients: 10,
-      numberOfProducts: 30,
+      numberOfProducts: 20,
       numberOfOffers: Infinity,
       numberOfOrders: Infinity,
     },
