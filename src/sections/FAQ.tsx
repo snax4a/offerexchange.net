@@ -66,10 +66,10 @@ const accordionData: AccordionItem[] = [
     title: 'Jak aktualnie wygląda proces zakupu planów płatnych?',
     contents: (
       <div>
-        Pracujemy nad automatyzacją tego procesu, plany płatne sprzedawane są na podstawie
-        zamówienia złożonego przez formularz kontaktowy. Wystarczy, że w wiadomości podasz
-        nam nazwę planu, który wybrałeś oraz dane do faktury, a my zajmiemy się resztą
-        najszybciej, jak to możliwe.
+        Płatności i fakturowanie są obsługiwane przez bezpieczną bramkę płatności Stripe.
+        Po zalogowaniu do Offer Exchange będziesz miał możliwość przejścia do panelu
+        klienta w Stripe, gdzie będziesz mógł zmienić swoje dane rozliczeniowe, zmienić
+        plan lub anulować subskrypcję.
       </div>
     ),
   },
